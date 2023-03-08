@@ -1,0 +1,34 @@
+[
+    {
+        "name": "bitsxlaMarató 2021",
+        "description": "La Marató hackathon. 36h. Dec 16th-18th.",
+        "start_date": "10-12-2021 6:00 PM",
+        "end_date": "12-12-2021 4:30 PM",
+        "main_url": "https://www.fib.upc.edu/ca/la-marato/edicions-anteriors/hackaton-la-salut-mental",
+        "devpost_url": "https://bitsxlamarato-2021.devpost.com/"
+    },
+    {
+        "name": "HackUPC 2022",
+        "description": "Hybrid Student Hackathon. 36h. April 29th-1st May.",
+        "start_date": "29-0-2022 6:00 PM",
+        "end_date": "1-05-2022 5:00 PM",
+        "main_url": "https://2022.hackupc.com",
+        "devpost_url": ""
+    },
+    {
+        "name": "bitsxlaMarato 2022",
+        "description": "La Marató hackathon. 36h. Dec 16th-18th.",
+        "start_date": "2022-12-16 6:00 PM",
+        "end_date": "2022-12-18 4:30 PM",
+        "main_url": "https://www.fib.upc.edu/la-marato",
+        "devpost_url":""
+    },
+    {
+        "name": "HackUPC 2023",
+        "description": "BarcelonaTech's Student Hackathon. 600 hackers. 36h. May 12-14.",
+        "start_date": "2023-05-12 6:00 PM",
+        "end_date": "2023-05-14 4:30 PM",
+        "main_url": "https://hackupc.com",
+        "devpost_url":""
+    }
+]

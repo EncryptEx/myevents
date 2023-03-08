@@ -1,0 +1,36 @@
+[
+    {
+        "name": "HackUPC 2021",
+        "description": "Built a login paswordless service based on face recognition.",
+        "start_date": "12-04-2021 6:00 PM",
+        "end_date": "12-05-2021 5:00 PM",
+        "main_url": "https://2021.hackupc.com",
+        "devpost_url": "https://hackupc2021.devpost.com/",
+        "project_url": "https://devpost.com/software/loginly"
+    },
+    {
+        "name": "HackEPS 2021",
+        "description": "We tried to build a collaborative and real time app simulating an e-shopping app",
+        "start_date": "27-11-2021",
+        "end_date": "28-11-2021",
+        "main_url": "https://www.lleidahack.dev/hackeps-2021",
+        "devpost_url": "https://hackeps-2021.devpost.com/",
+        "project_url" : "https://devpost.com/software/cartfresh-a-collaboratevily-real-time-shopping-experience"
+    },
+    {
+        "name": "Junction 2022",
+        "description": "We built a project which helps people recycle. We created a second-hand market to improve reusability and a trash pick-up system using Wolt's integration",
+        "start_date": "04-11-2022 4:00PM",
+        "end_date": "6-11-2022 7:00PM",
+        "main_url": "https://www.junction2022.com/",
+        "devpost_url": "https://github.com/carlotacb/finncycle"
+    },
+    {
+        "name": "HackEPS 2022",
+        "description": "We built an app that provides a fast way to notify other users about these incidence, like coworkers or authorities",
+        "start_date": "",
+        "end_date": "",
+        "main_url": "https://www.lleidahack.dev/hackeps-2022",
+        "devpost_url": "https://devpost.com/software/gsf-geo-sensor-field"
+    }
+]
