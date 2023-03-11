@@ -1,12 +1,33 @@
 <?php
 session_start();
 
-function retrieve($filename)
+function retrieve($filename, $wantsDescending = FALSE)
 {
     $data = json_decode(file_get_contents($filename), true);
+    if ($wantsDescending) {
+        $data = array_reverse($data);
+    }
     return $data;
 }
 
+function monthToString($monthNum)
+{
+    $months = [
+        1 => "Jan",
+        2 => "Feb",
+        3 => "Mar",
+        4 => "Apr",
+        5 => "May",
+        6 => "June",
+        7 => "Jul",
+        8 => "Aug",
+        9 => "Sep",
+        10 => "Oct",
+        11 => "Nov",
+        12 => "Dec"
+    ];
+    return $months[$monthNum];
+}
 
 ?>
 <!DOCTYPE html>
@@ -34,61 +55,186 @@ function retrieve($filename)
 </head>
 
 <body>
-    <div class="container mt-5">
+    <div class="container mt-3 mt-md-5">
         <h1>Congresses and Hackathons</h1>
 
         <h3>Interactive Map</h3>
 
         <div class="row">
-            <div class="col-xl-5 col-md-6 col-12">
+            <div class="col-md-6 col-12">
                 <h4>Hackathons Organized</h4>
                 <div class="row">
                     <?php
-                    $organized = retrieve("./data/organized_hackathons.json");
+                    $organized = retrieve("./data/organized_hackathons.json", TRUE);
                     foreach ($organized as $hackathon) :
 
                     ?>
 
-                        <div class='col-12 mt-3'>
-                            <div class="row mt-4 border rounded shadow p-3">
+                        <div class='col-md-11 col-12 mt-3'>
+                            <div class="row mb-4 border rounded shadow p-3">
                                 <div class="col-4">
                                     <img src="https://fakeimg.pl/250x250/" class="portait rounded">
                                 </div>
                                 <div class="col-8">
                                     <div class="row">
-                                        <div class="col-8">
-                                            <h6 style='font-size: 120%; font-weight:bold;'><?php echo htmlentities($hackathon['name']); ?></h6>
-                                        </div><?php if ($hackathon['devpost_url'] != "" || $hackathon['devpost_url'] != "") : ?>
-                                            <div class="col-4">
-                                                <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['main_url']); ?>'>
-                                                    <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
-                                                </a>
-                                                <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['devpost_url']); ?>'>
-                                                    <img class="icon" src="./static/img/devpost.png" alt="devpost logo">
-                                                </a>
-                                            </div><?php endif; ?>
+                                        <div class="col-12">
+                                            <h6 style='font-size: 120%; font-weight:bold;'><?php echo htmlentities($hackathon['name']); ?>
+                                                <div style="float:right;">
+                                                    <?php if ($hackathon['main_url'] != "" || $hackathon['devpost_url'] != "") : ?>
+
+                                                        <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['main_url']); ?>'>
+                                                            <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
+                                                        </a>
+                                                        <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['devpost_url']); ?>'>
+                                                            <img class="icon" src="./static/img/devpost.png" alt="devpost logo">
+                                                        </a>
+                                                    <?php endif; ?>
+                                                </div>
+                                            </h6>
+                                        </div>
                                         <div class="col-12">
                                             <p class='text-muted card-text text-justify'><?php echo htmlentities($hackathon['description']); ?></p>
-                                            <p class='text-muted card-text text-justify'><?php echo (htmlentities($hackathon['start_date'] . " | " . $hackathon['end_date'])); ?></p>
+                                            <p class='text-muted card-text text-justify'><?php
+                                                                                            $d = $hackathon['start_date'];
+                                                                                            $e = $hackathon['end_date'];
+                                                                                            $sd = date_parse($d);
+                                                                                            $ed = date_parse($e);
+
+                                                                                            if ($sd['month'] == $ed['month']) {
+                                                                                                $parsedMonth = monthToString($ed['month']);
+                                                                                            } else {
+                                                                                                $parsedMonth = monthToString($sd['month']) . "-" . monthToString($ed['month']);
+                                                                                            }
+                                                                                            echo (htmlentities($parsedMonth . " " . $ed['year'])); ?></p>
+                                            <!-- TODO: do a bs5 tooltip to show date -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
 
-                                        </div> <?php endforeach;
+                        </div> <?php endforeach;
                                 ?>
                 </div>
-                <h4>Hackathons Attended</h4>
+                <div class="col-12">
+                    <h4 style="margin-top:60px;">Hackathons Attended</h4>
+                    <div class="row">
+                        <?php
+                        $organized = retrieve("./data/organized_hackathons.json", TRUE);
+                        foreach ($organized as $hackathon) :
 
+                        ?>
+
+                            <div class='col-md-11 col-12 mt-3'>
+                                <div class="row mb-4 border rounded shadow p-3">
+                                    <div class="col-4">
+                                        <img src="https://fakeimg.pl/250x250/" class="portait rounded">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h6 style='font-size: 120%; font-weight:bold;'><?php echo htmlentities($hackathon['name']); ?>
+                                                    <div style="float:right;">
+                                                        <?php if ($hackathon['main_url'] != "" || $hackathon['devpost_url'] != "") : ?>
+
+                                                            <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['main_url']); ?>'>
+                                                                <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
+                                                            </a>
+                                                            <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['devpost_url']); ?>'>
+                                                                <img class="icon" src="./static/img/devpost.png" alt="devpost logo">
+                                                            </a>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </h6>
+                                            </div>
+                                            <div class="col-12">
+                                                <p class='text-muted card-text text-justify'><?php echo htmlentities($hackathon['description']); ?></p>
+                                                <p class='text-muted card-text text-justify'><?php
+                                                                                                $d = $hackathon['start_date'];
+                                                                                                $e = $hackathon['end_date'];
+                                                                                                $sd = date_parse($d);
+                                                                                                $ed = date_parse($e);
+
+                                                                                                if ($sd['month'] == $ed['month']) {
+                                                                                                    $parsedMonth = monthToString($ed['month']);
+                                                                                                } else {
+                                                                                                    $parsedMonth = monthToString($sd['month']) . "-" . monthToString($ed['month']);
+                                                                                                }
+                                                                                                echo (htmlentities($parsedMonth . " " . $ed['year'])); ?></p>
+                                                <!-- TODO: do a bs5 tooltip to show date -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div> <?php endforeach;
+                                    ?>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-12">
+
+            <div class=" col-md-6 col-12">
                 <h4>Congresses Attended</h4>
-            </div>
-        </div>
-        <hr class="d-sm-none">
+                <div class="row">
+                    <?php
+                    $organized = retrieve("./data/attended_congresses.json", TRUE);
+                    foreach ($organized as $hackathon) :
 
-    </div>
+                    ?>
+
+                        <div class='col-md-11 col-12 mt-3'>
+                            <div class="row mb-4 border rounded shadow p-3">
+                                <div class="col-4">
+                                    <img src="<?php echo(htmlentities($hackathon['photo_url'])); ?>" class="portait rounded">
+                                </div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6 style='font-size: 120%; font-weight:bold;'><?php echo htmlentities($hackathon['name']); ?>
+                                                <div style="float:right;">
+                                                    <?php if ($hackathon['main_url'] != "") : ?>
+
+                                                        <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['main_url']); ?>'>
+                                                            <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
+                                                        </a>
+
+
+
+                                                    <?php endif; ?>
+                                                </div>
+                                            </h6>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class='text-muted card-text text-justify'><?php echo htmlentities($hackathon['description']); ?></p>
+                                            <p class='text-muted card-text text-justify'><?php
+                                                                                            $d = $hackathon['start_date'];
+                                                                                            $e = $hackathon['end_date'];
+                                                                                            $sd = date_parse($d);
+                                                                                            $ed = date_parse($e);
+
+                                                                                            if ($sd['month'] == $ed['month']) {
+                                                                                                $parsedMonth = monthToString($ed['month']);
+                                                                                            } else {
+                                                                                                $parsedMonth = monthToString($sd['month']) . "-" . monthToString($ed['month']);
+                                                                                            }
+                                                                                            echo (htmlentities($parsedMonth . " " . $ed['year'])); ?></p>
+                                            <!-- TODO: do a bs5 tooltip to show date -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+            </div>
+
+
+            <hr class="d-sm-none">
+
+        </div>
 </body>
 
 </html>

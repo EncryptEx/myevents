@@ -4,76 +4,87 @@
         "description": "The startup business platform that enables startups, investors and companies to connect and launch new business ventures together.",
         "start_date": "25-02-2019 9:00 AM",
         "end_date": "27-02-2019 5:00 PM",
-        "main_url": "https://web.archive.org/web/20190715210801/https://www.mwcbarcelona.com/experiences/4yfn/"
+        "main_url": "https://web.archive.org/web/20190715210801/https://www.mwcbarcelona.com/experiences/4yfn/",
+        "photo_url": "./static/img/4yfn.jpg"
     },
     {
         "name": "Mobile World Congress 2021",
         "description": "Explore the most cutting-edge technology and product launches. Meet the exhibitors who bring innovation and inspiration.",
         "start_date": "28-06-2021 8:00 AM",
         "end_date": "01-07-2021 4:00 PM",
-        "main_url": "https://web.archive.org/web/20210629171510/https://www.mwcbarcelona.com/"
+        "main_url": "https://web.archive.org/web/20210629171510/https://www.mwcbarcelona.com/",
+        "photo_url": "./static/img/mwcbarcelona.jpg"
     },
     {
         "name": "4 Years From Now 2021",
         "description": "The startup business platform that enables startups, investors and companies to connect and launch new business ventures together.",
         "start_date": "28-06-2019 8:00 AM",
         "end_date": "01-07-2019 4:00 PM",
-        "main_url": "https://web.archive.org/web/20210628060835/https://www.4yfn.com/"
+        "main_url": "https://web.archive.org/web/20210628060835/https://www.4yfn.com/",
+        "photo_url": "./static/img/4yfn.jpg"
     },
     {
         "name": "Mobile World Congress 2022",
         "description": "MWC Barcelona is the world’s most influential event for the connectivity industry. It’s where world-leading companies and trailblazers share the latest thought leadership about the progression and future of connectivity.",
         "start_date": "28-02-2022 8:00 AM",
         "end_date": "03-03-2022 4:00 PM",
-        "main_url": "https://web.archive.org/web/20211201055129/https://www.mwcbarcelona.com/"
+        "main_url": "https://web.archive.org/web/20211201055129/https://www.mwcbarcelona.com/",
+        "photo_url": "./static/img/mwcbarcelona.jpg"
     },
     {
         "name": "4 Years From Now 2022",
         "description": "The 4YFN exhibition featured hundreds of companies from across the globe with representatives from all facets of the tech industry.",
         "start_date": "28-02-2022 8:00 AM",
         "end_date": "03-03-2022 4:00 PM",
-        "main_url": "https://web.archive.org/web/20220103235302/https://www.4yfn.com/"
+        "main_url": "https://web.archive.org/web/20220103235302/https://www.4yfn.com/",
+        "photo_url": "./static/img/4yfn.jpg"
     },
     {
         "name": "Barcelona Tech Job Fair Autumn 2022",
         "description": "The startup business platform that enables startups, investors and companies to connect and launch new business ventures together.",
         "start_date": "03-11-2022 18:00 PM",
         "end_date": "03-11-2022 21:00 PM",
-        "main_url": "https://www.eventbrite.co.uk/e/barcelona-tech-job-fair-autumn-2022-tickets-337227555697?aff=ebdshpsearchautocomplete"
+        "main_url": "https://www.eventbrite.co.uk/e/barcelona-tech-job-fair-autumn-2022-tickets-337227555697?aff=ebdshpsearchautocomplete",
+        "photo_url": "./static/img/techmeetups.png"
     },
     {
         "name": "IOT Solutions World Congress 2023",
         "description": "More than 250 ground-breaking speakers will take the stage in Barcelona (Jan 31 – Feb 2) to share their use cases around the transformative power of disruptive technologies including IoT, AI, digital twin, 5G, edge, augmented reality, quantum computing and more.",
         "start_date": "31-01-2023 6:00 PM",
         "end_date": "02-02-2023 5:00 PM",
-        "main_url": "https://web.archive.org/web/20230107233150/https://www.iotsworldcongress.com/"
+        "main_url": "https://web.archive.org/web/20230107233150/https://www.iotsworldcongress.com/",
+        "photo_url": "./static/img/iotswc.png"
     },
     {
         "name": "Barcelona Cybersecurity Congress 2023",
         "description": "Join your peers, stakeholder, industry players and providers at the Barcelona Cybersecurity Congress to find real solutions to the challenges and needs of the sector and discover new ways of collaboration to build a better digital world.",
         "start_date": "31-01-2023 6:00 PM",
         "end_date": "02-02-2023 5:00 PM",
-        "main_url": "https://web.archive.org/web/20221203053256/https://www.barcelonacybersecuritycongress.com/"
+        "main_url": "https://web.archive.org/web/20221203053256/https://www.barcelonacybersecuritycongress.com/",
+        "photo_url": "./static/img/bcc.jpg"
     },
     {
         "name": "Integrated Systems Europe 2023",
         "description": "The world’s leading AV and systems integration exhibition.",
         "start_date": "31-01-2023 6:00 PM",
         "end_date": "02-02-2023 5:00 PM",
-        "main_url": "https://web.archive.org/web/20221203215223/https://www.iseurope.org/"
+        "main_url": "https://web.archive.org/web/20221203215223/https://www.iseurope.org/",
+        "photo_url": "./static/img/ise23.jpg"
     },
     {
         "name": "Mobile World Congress 2023",
         "description": "Find the right pass for you and join us to experience Velocity – the theme for MWC Barcelona 2023.",
         "start_date": "27-02-2023 8:00 AM",
         "end_date": "2-03-2023 4:00 PM",
-        "main_url": "https://web.archive.org/web/20221231223738/https://www.mwcbarcelona.com/"
+        "main_url": "https://web.archive.org/web/20221231223738/https://www.mwcbarcelona.com/",
+        "photo_url": "./static/img/mwc.jpg"
     },
     {
         "name": "4 Years From Now 2023",
         "description": "The startup business platform that enables startups, investors and companies to connect and launch new business ventures together.",
         "start_date": "27-02-2023 8:00 AM",
         "end_date": "2-03-2023 4:00 PM",
-        "main_url": "https://web.archive.org/web/20221231143900/https://www.4yfn.com/"
+        "main_url": "https://web.archive.org/web/20221231143900/https://www.4yfn.com/",
+        "photo_url": "./static/img/4yfn.jpg"
     }
 ]
