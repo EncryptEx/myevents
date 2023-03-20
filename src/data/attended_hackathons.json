@@ -23,7 +23,7 @@
         "name": "Junction 2022",
         "description": "We built a project which helps people recycle. We created a second-hand market to improve reusability and a trash pick-up system using Wolt's integration",
         "start_date": "04-11-2022 4:00PM",
-        "end_date": "6-11-2022 7:00PM",
+        "end_date": "06-11-2022 7:00PM",
         "main_url": "https://www.junction2022.com/",
         "devpost_url": "https://github.com/carlotacb/finncycle",
         "photo_url":"./static/img/junction.png"
