@@ -41,7 +41,7 @@ function monthToString($monthNum)
     <script src="https://kit.fontawesome.com/df57820da4.js" crossorigin="anonymous"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
-    <title>MyEvents - Jaume LÃ³pez Molina</title>
+    <title>MyEvents - Jaume López Molina</title>
     <style>
         .icon {
             width: 25px;
