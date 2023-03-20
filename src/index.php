@@ -39,7 +39,9 @@ function monthToString($monthNum)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/df57820da4.js" crossorigin="anonymous"></script>
-    <title>MyEvents - Jaume López Molina</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <title>MyEvents - Jaume LÃ³pez Molina</title>
     <style>
         .icon {
             width: 25px;
@@ -62,7 +64,7 @@ function monthToString($monthNum)
     <div class="container mt-3 mt-md-5">
         <h1>Congresses and Hackathons</h1>
         <!-- switch starts -->
-        <div class="d-flex">
+        <!-- <div class="d-flex">
             <div class="form-check form-switch ms-auto mt-3 me-3">
                 <label class="form-check-label ms-3" for="lightSwitch">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
@@ -71,9 +73,81 @@ function monthToString($monthNum)
                 </label>
                 <input class="form-check-input" type="checkbox" id="lightSwitch" />
             </div>
-        </div>
+        </div> -->
         <!-- switch ends -->
         <h3>Interactive Map</h3>
+        <div id='map' style='width: 100%; height: auto; min-height:500px;'></div>
+        <hr class="mb-4">
+        <style>
+            .marker {
+                /* default icon */
+                background-image: url('https://docs.mapbox.com/help/demos/custom-markers-gl-js/mapbox-icon.png');
+                background-size: cover;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .mapboxgl-popup {
+                max-width: 200px;
+            }
+
+            .mapboxgl-popup-content {
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+            }
+        </style>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiZW5jcnlwdGV4IiwiYSI6ImNsZjVuMm54NzBtbHYzd3FoZ3h6czh1MWIifQ.a-ffpy_yiO84rbT774vpaw';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v12',
+                // Europe / Spain  Zoom
+                center: [0.6, 41],
+                zoom: 3
+            });
+
+
+
+            function generateMarkers(jsonFile, photourls) {
+                var identifier = 0;
+                fetch(jsonFile)
+                    .then((response) => response.json())
+                    .then((json) => {
+
+                        for (const event of json) {
+                            // create a HTML element for each event
+                            const el = document.createElement("div");
+                            el.className = "marker";
+                            el.id = "markerId" + identifier;
+                            if (event.geometry == undefined) {
+                                continue
+                            };
+                            // Add marker to map
+                            var coords = [event.geometry.coordinates.lng, event.geometry.coordinates.lat];
+                            new mapboxgl.Marker(el)
+
+                                .setLngLat(coords)
+                                .setPopup(
+                                    new mapboxgl.Popup({
+                                        offset: 25
+                                    }) // add popups
+                                    .setHTML(
+                                        `<h3>${event.name}</h3><p>${event.description}</p>`
+                                    )
+                                )
+                                .addTo(map);
+                                    
+                            // set pin icon
+                            el.style.backgroundImage = 'url('+ event.photo_url +')';                            
+                        }
+                    });
+            }
+            generateMarkers("./data/attended_hackathons.json");
+            generateMarkers("./data/attended_congresses.json");
+            generateMarkers("./data/organized_hackathons.json");
+        </script>
         <div class="row">
             <div class="col-md-6 col-12">
                 <h4>Hackathons Organized</h4>

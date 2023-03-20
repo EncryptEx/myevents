@@ -17,7 +17,14 @@
         "main_url": "https://www.lleidahack.dev/hackeps-2021",
         "devpost_url": "https://hackeps-2021.devpost.com/",
         "project_url" : "https://devpost.com/software/cartfresh-a-collaboratevily-real-time-shopping-experience",
-        "photo_url":"./static/img/hackeps21.jpg"
+        "photo_url":"./static/img/hackeps21.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.6084957935206,
+                "lng":0.6235172642406042
+            }
+        }
     },
     {
         "name": "Junction 2022",
@@ -26,7 +33,14 @@
         "end_date": "6-11-2022 7:00PM",
         "main_url": "https://www.junction2022.com/",
         "devpost_url": "https://github.com/carlotacb/finncycle",
-        "photo_url":"./static/img/junction.png"
+        "photo_url":"./static/img/junction.png",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 60.1850967,
+                "lng": 24.8319269
+            }
+        }
     },
     {
         "name": "HackEPS 2022",
@@ -35,6 +49,13 @@
         "end_date": "27-11-2022 4:00PM",
         "main_url": "https://www.lleidahack.dev/hackeps-2022",
         "devpost_url": "https://devpost.com/software/gsf-geo-sensor-field",
-        "photo_url":"./static/img/hackeps22.jpg"
+        "photo_url":"./static/img/hackeps22.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.6083348493882,
+                "lng": 0.6232264092489004
+            }
+        }
     }
 ]

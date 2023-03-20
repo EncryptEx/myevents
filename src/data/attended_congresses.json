@@ -5,7 +5,14 @@
         "start_date": "25-02-2019 9:00 AM",
         "end_date": "27-02-2019 5:00 PM",
         "main_url": "https://web.archive.org/web/20190715210801/https://www.mwcbarcelona.com/experiences/4yfn/",
-        "photo_url": "./static/img/4yfn.jpg"
+        "photo_url": "./static/img/4yfn.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.3745016,
+                "lng": 2.1504401
+            }
+        }
     },
     {
         "name": "Mobile World Congress 2021",
@@ -13,7 +20,14 @@
         "start_date": "28-06-2021 8:00 AM",
         "end_date": "01-07-2021 4:00 PM",
         "main_url": "https://web.archive.org/web/20210629171510/https://www.mwcbarcelona.com/",
-        "photo_url": "./static/img/mwcbarcelona.jpg"
+        "photo_url": "./static/img/mwcbarcelona.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.35423493292072,
+                "lng": 2.129036292460455
+            }
+        }
     },
     {
         "name": "4 Years From Now 2021",
@@ -21,7 +35,14 @@
         "start_date": "28-06-2019 8:00 AM",
         "end_date": "01-07-2019 4:00 PM",
         "main_url": "https://web.archive.org/web/20210628060835/https://www.4yfn.com/",
-        "photo_url": "./static/img/4yfn.jpg"
+        "photo_url": "./static/img/4yfn.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.35522157798229,
+                "lng": 2.1345168405963477
+            }
+        }
     },
     {
         "name": "Mobile World Congress 2022",
@@ -30,6 +51,14 @@
         "end_date": "03-03-2022 4:00 PM",
         "main_url": "https://web.archive.org/web/20211201055129/https://www.mwcbarcelona.com/",
         "photo_url": "./static/img/mwcbarcelona.jpg"
+        ,
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.3545102,
+                "lng": 2.128146
+            }
+        }
     },
     {
         "name": "4 Years From Now 2022",
@@ -37,7 +66,14 @@
         "start_date": "28-02-2022 8:00 AM",
         "end_date": "03-03-2022 4:00 PM",
         "main_url": "https://web.archive.org/web/20220103235302/https://www.4yfn.com/",
-        "photo_url": "./static/img/4yfn.jpg"
+        "photo_url": "./static/img/4yfn.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.35676463367889,
+                "lng": 2.1319923260358564
+            }
+        }
     },
     {
         "name": "Barcelona Tech Job Fair Autumn 2022",
@@ -45,7 +81,14 @@
         "start_date": "03-11-2022 18:00 PM",
         "end_date": "03-11-2022 21:00 PM",
         "main_url": "https://www.eventbrite.co.uk/e/barcelona-tech-job-fair-autumn-2022-tickets-337227555697?aff=ebdshpsearchautocomplete",
-        "photo_url": "./static/img/techmeetups.png"
+        "photo_url": "./static/img/techmeetups.png",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.3990954,
+                "lng": 2.2019976
+            }
+        }
     },
     {
         "name": "IOT Solutions World Congress 2023",
@@ -53,7 +96,14 @@
         "start_date": "31-01-2023 6:00 PM",
         "end_date": "02-02-2023 5:00 PM",
         "main_url": "https://web.archive.org/web/20230107233150/https://www.iotsworldcongress.com/",
-        "photo_url": "./static/img/iotswc.png"
+        "photo_url": "./static/img/iotswc.png",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.35494571433193,
+                "lng": 2.1332918680309376
+            }
+        }
     },
     {
         "name": "Barcelona Cybersecurity Congress 2023",
@@ -61,7 +111,14 @@
         "start_date": "31-01-2023 6:00 PM",
         "end_date": "02-02-2023 5:00 PM",
         "main_url": "https://web.archive.org/web/20221203053256/https://www.barcelonacybersecuritycongress.com/",
-        "photo_url": "./static/img/bcc.jpg"
+        "photo_url": "./static/img/bcc.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.35420804474296,
+                "lng": 2.1333789636551046 
+            }
+        }
     },
     {
         "name": "Integrated Systems Europe 2023",
@@ -69,7 +126,15 @@
         "start_date": "31-01-2023 6:00 PM",
         "end_date": "02-02-2023 5:00 PM",
         "main_url": "https://web.archive.org/web/20221203215223/https://www.iseurope.org/",
-        "photo_url": "./static/img/ise23.jpg"
+        "photo_url": "./static/img/ise23.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.3548983032442,
+                "lng": 2.1304037667756575
+            }
+        }
+        
     },
     {
         "name": "Mobile World Congress 2023",
@@ -77,7 +142,14 @@
         "start_date": "27-02-2023 8:00 AM",
         "end_date": "2-03-2023 4:00 PM",
         "main_url": "https://web.archive.org/web/20221231223738/https://www.mwcbarcelona.com/",
-        "photo_url": "./static/img/mwc.jpg"
+        "photo_url": "./static/img/mwc.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.355520800040864,
+                "lng": 2.131780181532804
+            }
+        }
     },
     {
         "name": "4 Years From Now 2023",
@@ -85,6 +157,13 @@
         "start_date": "27-02-2023 8:00 AM",
         "end_date": "2-03-2023 4:00 PM",
         "main_url": "https://web.archive.org/web/20221231143900/https://www.4yfn.com/",
-        "photo_url": "./static/img/4yfn.jpg"
+        "photo_url": "./static/img/4yfn.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.35581903318689,
+                "lng": 2.136694868608629
+            }
+        }
     }
 ]
