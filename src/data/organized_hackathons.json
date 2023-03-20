@@ -6,7 +6,14 @@
         "end_date": "12-12-2021 4:30 PM",
         "main_url": "https://www.fib.upc.edu/ca/la-marato/edicions-anteriors/hackaton-la-salut-mental",
         "devpost_url": "https://bitsxlamarato-2021.devpost.com/",
-        "photo_url": "./static/img/bits.png"
+        "photo_url": "./static/img/bits.png",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.38904857815484,
+                "lng": 2.1136291436503143
+            }
+        }
     },
     {
         "name": "HackUPC 2022",
@@ -15,7 +22,14 @@
         "end_date": "01-05-2022 5:00 PM",
         "main_url": "https://2022.hackupc.com",
         "devpost_url": "https://hackupc-2022.devpost.com/",
-        "photo_url": "./static/img/hackupc.svg"
+        "photo_url": "./static/img/hackupc.svg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.388864898788825,
+                "lng": 2.113344149346858
+            }
+        }
     },
     {
         "name": "bitsxlaMarato 2022",
@@ -24,7 +38,14 @@
         "end_date": "2022-12-18 4:30 PM",
         "main_url": "https://www.fib.upc.edu/la-marato",
         "devpost_url": "https://bitsxlamarato-2022.devpost.com/",
-        "photo_url": "./static/img/bits.png"
+        "photo_url": "./static/img/bits.png",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.388973570659346,
+                "lng": 2.113493181585227
+            }
+        }
     },
     {
         "name": "HackUPC 2023",
@@ -33,6 +54,13 @@
         "end_date": "2023-05-14 4:30 PM",
         "main_url": "https://hackupc.com",
         "devpost_url": "",
-        "photo_url": "./static/img/hackupc.svg"
+        "photo_url": "./static/img/hackupc.svg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.38869686305787,
+                "lng": 2.113158204179399
+            }
+        }
     }
 ]
