@@ -22,7 +22,7 @@
         "end_date": "01-05-2022 5:00 PM",
         "main_url": "https://2022.hackupc.com",
         "devpost_url": "https://hackupc-2022.devpost.com/",
-        "photo_url": "./static/img/hackupc.svg",
+        "photo_url": "./static/img/hackupc22.png",
         "geometry": {
             "type": "Point",
             "coordinates": {
@@ -54,7 +54,7 @@
         "end_date": "2023-05-14 4:30 PM",
         "main_url": "https://hackupc.com",
         "devpost_url": "",
-        "photo_url": "./static/img/hackupc.svg",
+        "photo_url": "./static/img/hackupc23.png",
         "geometry": {
             "type": "Point",
             "coordinates": {

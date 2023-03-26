@@ -1,0 +1,33 @@
+[
+    {
+        "name": "World Robot Olympiad 2018",
+        "description": "Our team arrived to the International Finals, representing Spain in the Open category. For more info see <a href='https://jaumelopez.dev/nazaretarea7.php'>here</a>",
+        "start_date": "16-11-2018 8:00 AM",
+        "end_date": "18-11-2018 8:00 PM",
+        "main_url": "hhttps://web.archive.org/web/20181014215344/http://www.wro2018.org:80/",
+        "photo_url": "./static/img/wro.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 8.8269322,
+                "lng": 98.9599088
+            }
+        }
+    },
+    {
+        "name": "World Robot Olympiad International Final 2019",
+        "description": "Our team arrived to the International Finals, representing Spain in the Football category. For more info see <a href='https://jaumelopez.dev/nazaretarea7.php'>here</a>",
+        "start_date": "29-04-2022 6:00 PM",
+        "end_date": "01-05-2022 5:00 PM",
+        "main_url": "https://web.archive.org/web/20191023084438/https://wro2019.org/",
+        "devpost_url": "https://hackupc-2022.devpost.com/",
+        "photo_url": "./static/img/wro.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 47.4785999,
+                "lng": 19.043044
+            }
+        }
+    }
+]

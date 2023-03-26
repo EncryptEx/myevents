@@ -147,6 +147,7 @@ function monthToString($monthNum)
             generateMarkers("./data/attended_hackathons.json");
             generateMarkers("./data/attended_congresses.json");
             generateMarkers("./data/organized_hackathons.json");
+            generateMarkers("./data/attended_competitions.json");
         </script>
         <div class="row">
             <div class="col-md-6 col-12">
