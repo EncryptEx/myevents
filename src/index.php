@@ -170,13 +170,13 @@ function monthToString($monthNum)
                                         <div class="col-12">
                                             <h6 style='font-size: 120%; font-weight:bold;'><?php echo htmlentities($hackathon['name']); ?>
                                                 <div style="float:right;">
-                                                    <?php if (isset($hackathon['main_url']) && $hackathon['main_url'] != ""): ?>
-                                                        
+                                                    <?php if (isset($hackathon['main_url']) && $hackathon['main_url'] != "") : ?>
+
                                                         <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['main_url']); ?>'>
                                                             <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
                                                         </a>
                                                     <?php endif;
-                                                    if (isset($hackathon['devpost_url']) && $hackathon['devpost_url'] != ""): ?>
+                                                    if (isset($hackathon['devpost_url']) && $hackathon['devpost_url'] != "") : ?>
                                                         <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['devpost_url']); ?>'>
                                                             <img class="icon" src="./static/img/devpost.png" alt="devpost logo">
                                                         </a>
@@ -210,84 +210,21 @@ function monthToString($monthNum)
                             endforeach;
                                 ?>
                 </div>
-                <div class="col-12">
-                    <h4 style="margin-top:60px;">Hackathons Attended</h4>
-                    <div class="row">
-                        <?php
-                        $iteratorCounter = 0;
-                        $organized = retrieve("./data/attended_hackathons.json", TRUE);
-                        foreach ($organized as $hackathon) :
-
-                        ?>
-
-                            <div class='col-md-11 col-12 mt-3' id='attended_hackathons_<?php echo $iteratorCounter; ?>'>
-                                <div class="row mb-4 border rounded shadow p-3">
-                                    <div class="col-4">
-                                        <img src="<?php echo (htmlentities($hackathon['photo_url'])); ?>" class="portait rounded">
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h6 style='font-size: 120%; font-weight:bold;'><?php echo htmlentities($hackathon['name']); ?>
-                                                    <div style="float:right;">
-                                                        <?php if (isset($hackathon['main_url']) && $hackathon['main_url'] != "") : ?>
-
-                                                            <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['main_url']); ?>'>
-                                                                <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
-                                                            </a>
-                                                        <?php endif;
-                                                        if (isset($hackathon['devpost_url']) && $hackathon['devpost_url'] != "") : ?>
-                                                            <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['devpost_url']); ?>'>
-                                                                <img class="icon" src="./static/img/devpost.png" alt="devpost logo">
-                                                            </a>
-                                                        <?php endif;
-                                                        if (isset($hackathon['project_url']) && $hackathon['project_url'] != "") : ?>
-                                                            <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['project_url']); ?>'>
-                                                                <img class="icon" src="./static/img/github.svg" alt="github logo">
-                                                            </a>
-                                                        <?php endif; ?>
-                                                    </div>
-                                                </h6>
-                                            </div>
-                                            <div class="col-12">
-                                                <p class='text-muted card-text text-justify'><?php echo htmlentities($hackathon['description']); ?></p>
-                                                <p class='text-muted card-text text-justify'><?php
-                                                                                                $d = $hackathon['start_date'];
-                                                                                                $e = $hackathon['end_date'];
-                                                                                                $sd = date_parse($d);
-                                                                                                $ed = date_parse($e);
-
-                                                                                                if ($sd['month'] == $ed['month']) {
-                                                                                                    $parsedMonth = monthToString($ed['month']);
-                                                                                                } else {
-                                                                                                    $parsedMonth = monthToString($sd['month']) . "-" . monthToString($ed['month']);
-                                                                                                }
-                                                                                                echo (htmlentities($parsedMonth . " " . $ed['year'])); ?></p>
-                                                <!-- TODO: do a bs5 tooltip to show date -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div> <?php
-                                    $iteratorCounter++;
-                                endforeach;
-                                    ?>
-                    </div>
-                </div>
             </div>
 
-            <div class=" col-md-6 col-12">
-                <h4>Congresses Attended</h4>
+
+
+            <div class="col-md-6 col-12">
+                <h4>Hackathons Attended</h4>
                 <div class="row">
                     <?php
-                    $organized = retrieve("./data/attended_congresses.json", TRUE);
                     $iteratorCounter = 0;
+                    $organized = retrieve("./data/attended_hackathons.json", TRUE);
                     foreach ($organized as $hackathon) :
+
                     ?>
 
-                        <div class='col-md-11 col-12 mt-3' id='attended_congresses_<?php echo $iteratorCounter; ?>'>
+                        <div class='col-md-11 col-12 mt-3' id='attended_hackathons_<?php echo $iteratorCounter; ?>'>
                             <div class="row mb-4 border rounded shadow p-3">
                                 <div class="col-4">
                                     <img src="<?php echo (htmlentities($hackathon['photo_url'])); ?>" class="portait rounded">
@@ -297,14 +234,21 @@ function monthToString($monthNum)
                                         <div class="col-12">
                                             <h6 style='font-size: 120%; font-weight:bold;'><?php echo htmlentities($hackathon['name']); ?>
                                                 <div style="float:right;">
-                                                    <?php if ($hackathon['main_url'] != "") : ?>
+                                                    <?php if (isset($hackathon['main_url']) && $hackathon['main_url'] != "") : ?>
 
                                                         <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['main_url']); ?>'>
                                                             <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
                                                         </a>
-
-
-
+                                                    <?php endif;
+                                                    if (isset($hackathon['devpost_url']) && $hackathon['devpost_url'] != "") : ?>
+                                                        <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['devpost_url']); ?>'>
+                                                            <img class="icon" src="./static/img/devpost.png" alt="devpost logo">
+                                                        </a>
+                                                    <?php endif;
+                                                    if (isset($hackathon['project_url']) && $hackathon['project_url'] != "") : ?>
+                                                        <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['project_url']); ?>'>
+                                                            <img class="icon" src="./static/img/github.svg" alt="github logo">
+                                                        </a>
                                                     <?php endif; ?>
                                                 </div>
                                             </h6>
@@ -329,12 +273,74 @@ function monthToString($monthNum)
                                 </div>
                             </div>
 
+
+                        </div> <?php
+                                $iteratorCounter++;
+                            endforeach;
+                                ?>
+                </div>
+
+            </div>
+
+            <div class="col-12">
+                <h4 style="margin-top:60px;">Congresses Attended</h4>
+                <div class="row">
+                    <?php
+                    $organized = retrieve("./data/attended_congresses.json", TRUE);
+                    $iteratorCounter = 0;
+                    foreach ($organized as $hackathon) :
+                    ?>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class='col-11 mt-3 mr' id='attended_congresses_<?php echo $iteratorCounter; ?>'>
+                                    <div class="row mb-4 border rounded shadow p-3">
+                                        <div class="col-4">
+                                            <img src="<?php echo (htmlentities($hackathon['photo_url'])); ?>" class="portait rounded">
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h6 style='font-size: 120%; font-weight:bold;'><?php echo htmlentities($hackathon['name']); ?>
+                                                        <div style="float:right;">
+                                                            <?php if ($hackathon['main_url'] != "") : ?>
+
+                                                                <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['main_url']); ?>'>
+                                                                    <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
+                                                                </a>
+
+
+
+                                                            <?php endif; ?>
+                                                        </div>
+                                                    </h6>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p class='text-muted card-text text-justify'><?php echo htmlentities($hackathon['description']); ?></p>
+                                                    <p class='text-muted card-text text-justify'><?php
+                                                                                                    $d = $hackathon['start_date'];
+                                                                                                    $e = $hackathon['end_date'];
+                                                                                                    $sd = date_parse($d);
+                                                                                                    $ed = date_parse($e);
+
+                                                                                                    if ($sd['month'] == $ed['month']) {
+                                                                                                        $parsedMonth = monthToString($ed['month']);
+                                                                                                    } else {
+                                                                                                        $parsedMonth = monthToString($sd['month']) . "-" . monthToString($ed['month']);
+                                                                                                    }
+                                                                                                    echo (htmlentities($parsedMonth . " " . $ed['year'])); ?></p>
+                                                    <!-- TODO: do a bs5 tooltip to show date -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     <?php
                         $iteratorCounter++;
                     endforeach; ?>
                 </div>
-
             </div>
 
 
