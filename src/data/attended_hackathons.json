@@ -59,6 +59,7 @@
         "end_date": "27-11-2022 4:00PM",
         "main_url": "https://www.lleidahack.dev/hackeps-2022",
         "devpost_url": "https://devpost.com/software/gsf-geo-sensor-field",
+        "project_url" : "https://github.com/gerardm27/HackEPS2022",
         "photo_url":"./static/img/hackeps22.jpg",
         "geometry": {
             "type": "Point",
