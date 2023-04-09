@@ -129,11 +129,11 @@ function monthToString($monthNum)
                             extraUrl = "";
                             if (event.extra_url != undefined) {
                                 // htmlentities in javascript (prevent xss)
-                                event.extra_url.replace(/[\u00A0-\u9999<>\&]/gim, function(i) {
+                                toAdd = event.extra_url.replace(/[\u00A0-\u9999<>\&]/gim, function(i) {
                                     return '&#' + i.charCodeAt(0) + ';';
                                 });
                                 // generate addition text
-                                extraUrl = ` For more info see <a href='${event.extra_url}'>here</a>`;
+                                extraUrl = ` For more info see <a href='${toAdd}'>here</a>.`;
                             }
 
                             // Add marker to map

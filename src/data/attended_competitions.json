@@ -5,8 +5,8 @@
         "start_date": "16-11-2018 8:00 AM",
         "end_date": "18-11-2018 8:00 PM",
         "main_url": "hhttps://web.archive.org/web/20181014215344/http://www.wro2018.org:80/",
-        "exta_url": "https://jaumelopez.dev/nazaretarea7.php",
-        "exta_url2": "https://web.archive.org/web/20230325223249/https://wro-association.org/wp-content/uploads/world-robot-olympiad_annual-report_2018.pdf",
+        "extra_url": "https://jaumelopez.dev/nazaretarea7.php",
+        "extra_url2": "https://web.archive.org/web/20230325223249/https://wro-association.org/wp-content/uploads/world-robot-olympiad_annual-report_2018.pdf",
         "photo_url": "./static/img/wro.jpg",
         "geometry": {
             "type": "Point",
@@ -22,8 +22,8 @@
         "start_date": "29-04-2022 6:00 PM",
         "end_date": "01-05-2022 5:00 PM",
         "main_url": "https://web.archive.org/web/20191023084438/https://wro2019.org/",
-        "exta_url": "https://jaumelopez.dev/nazaretarea7.php",
-        "exta_url": "https://web.archive.org/web/20220325110414/https://wro-association.org/wp-content/uploads/world-robot-olympiad_annual-report_2019.pdf",
+        "extra_url": "https://jaumelopez.dev/nazaretarea7.php",
+        "extra_url2": "https://web.archive.org/web/20220325110414/https://wro-association.org/wp-content/uploads/world-robot-olympiad_annual-report_2019.pdf",
         "photo_url": "./static/img/wro.jpg",
         "geometry": {
             "type": "Point",
