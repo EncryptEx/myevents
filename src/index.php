@@ -170,11 +170,13 @@ function monthToString($monthNum)
                                         <div class="col-12">
                                             <h6 style='font-size: 120%; font-weight:bold;'><?php echo htmlentities($hackathon['name']); ?>
                                                 <div style="float:right;">
-                                                    <?php if ($hackathon['main_url'] != "" || $hackathon['devpost_url'] != "") : ?>
-
+                                                    <?php if (isset($hackathon['main_url']) && $hackathon['main_url'] != ""): ?>
+                                                        
                                                         <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['main_url']); ?>'>
                                                             <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
                                                         </a>
+                                                    <?php endif;
+                                                    if (isset($hackathon['devpost_url']) && $hackathon['devpost_url'] != ""): ?>
                                                         <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['devpost_url']); ?>'>
                                                             <img class="icon" src="./static/img/devpost.png" alt="devpost logo">
                                                         </a>
