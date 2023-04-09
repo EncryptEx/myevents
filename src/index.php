@@ -126,6 +126,7 @@ function monthToString($monthNum)
                             };
 
                             // check for special case: extra_url
+                            extraUrl = "";
                             if (event.extra_url != undefined) {
                                 // htmlentities in javascript (prevent xss)
                                 event.extra_url.replace(/[\u00A0-\u9999<>\&]/gim, function(i) {
