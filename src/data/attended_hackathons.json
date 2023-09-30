@@ -74,7 +74,7 @@
         "description": "We developed and progressed in some side projects while discovering other people's creations.",
         "start_date": "24-03-2023 5:00AM",
         "end_date": "23-03-2023 9:30PM",
-        "main_url": "https://www.hacknights.dev",
+        "main_url": "https://web.archive.org/web/20230314223149/https://hacknights.dev/",
         "devpost_url": "",
         "photo_url":"./static/img/hacknights.png",
         "geometry": {
@@ -82,6 +82,22 @@
             "coordinates": {
                 "lat": 41.38863677141512,
                 "lng": 2.112800710689271
+            }
+        }
+    },
+    {
+        "name": "Hacknigts 2023 Episode III",
+        "description": "We created a fully functional robot using Arduino UNO and the L293D chip to invert the motor's phase.",
+        "start_date": "30-09-2023 5:00AM",
+        "end_date": "29-09-2023 9:00PM",
+        "main_url": "https://www.hacknights.dev",
+        "devpost_url": "",
+        "photo_url":"./static/img/hacknights.png",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.38863677141542,
+                "lng": 2.112800710689261
             }
         }
     }
