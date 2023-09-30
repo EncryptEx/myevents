@@ -1,88 +1,104 @@
 [
-    {
-        "name": "Discord Hack Week 2019",
-        "description": "Created a discord.js moderation bot with lots of functionalities using Nodejs and Sqlite3. ",
-        "start_date": "24-06-2019 9:00 AM",
-        "end_date": "28-06-2019 7:00 PM",
-        "main_url": "https://jaumelopez.dev/hammer.php",
-        "devpost_url": "https://web.archive.org/web/20230129213423/https://medium.com/discord-engineering/discord-community-hack-week-build-and-create-alongside-us-6b2a7b7bba33",
-        "project_url": "https://github.com/EncryptEx/hammer",
-        "photo_url":"./static/img/discord-hack-week.jpeg"
-    },
-    {
-        "name": "HackUPC 2021",
-        "description": "Built a login paswordless service based on face recognition.",
-        "start_date": "12-04-2021 6:00 PM",
-        "end_date": "12-05-2021 5:00 PM",
-        "main_url": "https://2021.hackupc.com",
-        "devpost_url": "https://devpost.com/software/loginly",
-        "project_url": "https://github.com/EncryptEx/loginly",
-        "photo_url":"./static/img/hackupc21.png"
-    },
-    {
-        "name": "HackEPS 2021",
-        "description": "We tried to build a collaborative and real time app simulating an e-shopping app",
-        "start_date": "27-11-2021 4:00PM",
-        "end_date": "28-11-2021 4:00PM",
-        "main_url": "https://www.lleidahack.dev/hackeps-2021",
-        "devpost_url": "https://devpost.com/software/cartfresh-a-collaboratevily-real-time-shopping-experience",
-        "project_url" : "",
-        "photo_url":"./static/img/hackeps21.jpg",
-        "geometry": {
-            "type": "Point",
-            "coordinates": {
-                "lat": 41.6084957935206,
-                "lng":0.6235172642406042
-            }
-        }
-    },
-    {
-        "name": "Junction 2022",
-        "description": "We built a project which helps people recycle. We created a second-hand market to improve reusability and a trash pick-up system using Wolt's integration",
-        "start_date": "04-11-2022 4:00PM",
-        "end_date": "6-11-2022 7:00PM",
-        "main_url": "https://www.junction2022.com/",
-        "project_url": "https://github.com/carlotacb/finncycle",
-        "photo_url":"./static/img/junction.png",
-        "geometry": {
-            "type": "Point",
-            "coordinates": {
-                "lat": 60.1850967,
-                "lng": 24.8319269
-            }
-        }
-    },
-    {
-        "name": "HackEPS 2022",
-        "description": "We built an app that provides a fast way to notify other users about these incidence, like coworkers or authorities",
-        "start_date": "26-11-2022 4:00PM",
-        "end_date": "27-11-2022 4:00PM",
-        "main_url": "https://www.lleidahack.dev/hackeps-2022",
-        "devpost_url": "https://devpost.com/software/gsf-geo-sensor-field",
-        "project_url" : "https://github.com/gerardm27/HackEPS2022",
-        "photo_url":"./static/img/hackeps22.jpg",
-        "geometry": {
-            "type": "Point",
-            "coordinates": {
-                "lat": 41.6083348493882,
-                "lng": 0.6232264092489004
-            }
-        }
-    },
-    {
-        "name": "Hacknigts 2023 Episode I",
-        "description": "We developed and progressed in some side projects while discovering other people's creations.",
-        "start_date": "24-03-2023 5:00AM",
-        "end_date": "23-03-2023 9:30PM",
-        "main_url": "https://www.hacknights.dev",
-        "devpost_url": "",
-        "photo_url":"./static/img/hacknights.png",
-        "geometry": {
-            "type": "Point",
-            "coordinates": {
-                "lat": 41.38863677141512,
-                "lng": 2.112800710689271
-            }
-        }
+  {
+    "name": "Discord Hack Week 2019",
+    "description": "Created a discord.js moderation bot with lots of functionalities using Nodejs and Sqlite3. ",
+    "start_date": "24-06-2019 9:00 AM",
+    "end_date": "28-06-2019 7:00 PM",
+    "main_url": "https://jaumelopez.dev/hammer.php",
+    "devpost_url": "https://web.archive.org/web/20230129213423/https://medium.com/discord-engineering/discord-community-hack-week-build-and-create-alongside-us-6b2a7b7bba33",
+    "project_url": "https://github.com/EncryptEx/hammer",
+    "photo_url": "./static/img/discord-hack-week.jpeg"
+  },
+  {
+    "name": "HackUPC 2021",
+    "description": "Built a login paswordless service based on face recognition.",
+    "start_date": "12-04-2021 6:00 PM",
+    "end_date": "12-05-2021 5:00 PM",
+    "main_url": "https://2021.hackupc.com",
+    "devpost_url": "https://devpost.com/software/loginly",
+    "project_url": "https://github.com/EncryptEx/loginly",
+    "photo_url": "./static/img/hackupc21.png"
+  },
+  {
+    "name": "HackEPS 2021",
+    "description": "We tried to build a collaborative and real time app simulating an e-shopping app",
+    "start_date": "27-11-2021 4:00PM",
+    "end_date": "28-11-2021 4:00PM",
+    "main_url": "https://www.lleidahack.dev/hackeps-2021",
+    "devpost_url": "https://devpost.com/software/cartfresh-a-collaboratevily-real-time-shopping-experience",
+    "project_url": "",
+    "photo_url": "./static/img/hackeps21.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.6084957935206,
+        "lng": 0.6235172642406042
+      }
     }
+  },
+  {
+    "name": "Junction 2022",
+    "description": "We built a project which helps people recycle. We created a second-hand market to improve reusability and a trash pick-up system using Wolt's integration",
+    "start_date": "04-11-2022 4:00PM",
+    "end_date": "6-11-2022 7:00PM",
+    "main_url": "https://www.junction2022.com/",
+    "project_url": "https://github.com/carlotacb/finncycle",
+    "photo_url": "./static/img/junction.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 60.1850967,
+        "lng": 24.8319269
+      }
+    }
+  },
+  {
+    "name": "HackEPS 2022",
+    "description": "We built an app that provides a fast way to notify other users about these incidence, like coworkers or authorities",
+    "start_date": "26-11-2022 4:00PM",
+    "end_date": "27-11-2022 4:00PM",
+    "main_url": "https://www.lleidahack.dev/hackeps-2022",
+    "devpost_url": "https://devpost.com/software/gsf-geo-sensor-field",
+    "project_url": "https://github.com/gerardm27/HackEPS2022",
+    "photo_url": "./static/img/hackeps22.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.6083348493882,
+        "lng": 0.6232264092489004
+      }
+    }
+  },
+  {
+    "name": "Hacknigts 2023 Episode I",
+    "description": "We developed and progressed in some side projects while discovering other people's creations.",
+    "start_date": "24-03-2023 5:00AM",
+    "end_date": "23-03-2023 9:30PM",
+    "main_url": "https://web.archive.org/web/20230314223149/https://hacknights.dev/",
+    "devpost_url": "",
+    "photo_url": "./static/img/hacknights.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.38863677141512,
+        "lng": 2.112800710689271
+      }
+    }
+  },
+  {
+    "name": "Hacknigts 2023 Episode III",
+    "description": "We created a fully functional robot using Arduino UNO and the L293D chip to invert the motor's phase.",
+    "start_date": "30-09-2023 5:00AM",
+    "end_date": "29-09-2023 9:00PM",
+    "main_url": "https://www.hacknights.dev",
+    "devpost_url": "",
+    "photo_url": "./static/img/hacknights.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.38863677141542,
+        "lng": 2.112800710689261
+      }
+    }
+  }
 ]
