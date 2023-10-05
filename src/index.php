@@ -302,9 +302,9 @@ function monthToString($monthNum)
                     $iteratorCounter = 0;
                     foreach ($organized as $competition) :
                     ?>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <div class="row">
-                                <div class='col-11 mt-3 mr' id='attended_competitions_<?php echo $iteratorCounter; ?>'>
+                                <div class='col-12 col-md-11 mt-3 mr' id='attended_competitions_<?php echo $iteratorCounter; ?>'>
                                     <div class="row mb-4 border rounded shadow p-3">
                                         <div class="col-4">
                                             <img src="<?php echo (htmlentities($competition['photo_url'])); ?>" class="portait rounded">
@@ -366,9 +366,9 @@ function monthToString($monthNum)
                     $iteratorCounter = 0;
                     foreach ($organized as $congress) :
                     ?>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <div class="row">
-                                <div class='col-11 mt-3 mr' id='attended_congresses_<?php echo $iteratorCounter; ?>'>
+                                <div class='col-12 col-md-11 mt-3 mr' id='attended_congresses_<?php echo $iteratorCounter; ?>'>
                                     <div class="row mb-4 border rounded shadow p-3">
                                         <div class="col-4">
                                             <img src="<?php echo (htmlentities($congress['photo_url'])); ?>" class="portait rounded">
