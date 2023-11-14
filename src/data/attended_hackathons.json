@@ -100,5 +100,21 @@
         "lng": 2.112800710689261
       }
     }
+  },
+  {
+    "name": "Junction 2023",
+    "description": "We created an app to gamify daily sport activities for smartwatches, like walking or running by providing rankings and rewards. ",
+    "start_date": "30-09-2023 5:00AM",
+    "end_date": "29-09-2023 9:00PM",
+    "main_url": "https://www.junction.com",
+    "devpost_url": "",
+    "photo_url": "./static/img/junction.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 24.903577186311736,
+        "lng": 60.16195340950861
+      }
+    }
   }
 ]
