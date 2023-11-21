@@ -90,7 +90,7 @@
     "description": "We created a fully functional robot using Arduino UNO and the L293D chip to invert the motor's phase.",
     "start_date": "30-09-2023 5:00AM",
     "end_date": "29-09-2023 9:00PM",
-    "main_url": "https://www.hacknights.dev",
+    "main_url": "https://web.archive.org/web/20231114080947/https://hacknights.dev/",
     "devpost_url": "",
     "photo_url": "./static/img/hacknights.png",
     "geometry": {
@@ -113,7 +113,23 @@
       "type": "Point",
       "coordinates": {
         "lat": 60.16195340950861,
-        "lng": 24.903577186311736
+        "lng": 24.90357718631173
+      }
+    }
+  },
+  {
+    "name": "Hacknigts 2023 Episode IV",
+    "description": "Developed an an app using an IA trained model to detect and classify hand positions based on images to create a sign language",
+    "start_date": "17-09-2023 5:00AM",
+    "end_date": "18-09-2023 9:00PM",
+    "main_url": "https://hacknights.dev/",
+    "devpost_url": "",
+    "photo_url": "./static/img/hacknights.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.38863677141542,
+        "lng": 2.112800710689261
       }
     }
   }
