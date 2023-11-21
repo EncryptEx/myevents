@@ -1,0 +1,18 @@
+[
+    {
+        "name": "SocialHack PDS",
+        "description": "",
+        "start_date": "17-09-2023 5:00PM",
+        "end_date": "19-09-2023 9:00AM",
+        "main_url": "https://hacknights.dev/",
+        "devpost_url": "",
+        "photo_url": "./static/img/hacknights.png",
+        "geometry": {
+          "type": "Point",
+          "coordinates": {
+            "lat": 41.38863677141542,
+            "lng": 2.112800710689261
+          }
+        }
+      }
+]
