@@ -165,5 +165,20 @@
                 "lng": 2.136694868608629
             }
         }
+    },
+    {
+        "name": "Jump2Digital 2023",
+        "description": "A digital and futuristic event where tech enthusiats and programmers met to discover new tech areas, and to attend and hear the successful stories of some ponents.",
+        "start_date": "17-09-2023 5:00AM",
+        "end_date": "18-09-2023 9:00PM",
+        "main_url": "https://jump2digital.site",
+        "photo_url": "./static/img/jump2digital.webp",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.3745016,
+                "lng": 2.1504401
+            }
+        }
     }
 ]

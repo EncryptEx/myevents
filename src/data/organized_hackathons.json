@@ -62,5 +62,21 @@
                 "lng": 2.113158204179399
             }
         }
+    },
+    {
+        "name": "bitsxlaMarato 2023",
+        "description": "La Marató hackathon. 36h. Dec 15th-17th.",
+        "start_date": "2023-12-15 6:00 PM",
+        "end_date": "2023-12-17 4:30 PM",
+        "main_url": "https://www.fib.upc.edu/la-marato",
+        "devpost_url": "https://bitsxlamarato-2022.devpost.com/",
+        "photo_url": "./static/img/bits.png",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.388973570659346,
+                "lng": 2.113493181585227
+            }
+        }
     }
 ]
