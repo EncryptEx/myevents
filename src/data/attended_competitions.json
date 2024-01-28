@@ -17,6 +17,22 @@
         }
     },
     {
+        "name": "Nazaret Robotics Experience",
+        "description": "Our network of schools competed each other in a robotics competition. The event was held at Madrid, and we participated in a sumo-like competition.",
+        "start_date": "19-01-2019 9:00 AM",
+        "end_date": "19-01-2019 5:00 PM",
+        "main_url": "https://twitter.com/Nazaret_Robotic",
+        "extra_url": "https://www.youtube.com/watch?v=TvsxKSL0X2s",
+        "photo_url": "./static/img/nre.jpg",
+        "geometry": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 40.390399719645416,
+                "lng": -3.7282148456414936
+            }
+        }
+    },
+    {
         "name": "World Robot Olympiad 2019",
         "description": "Our team arrived to the International Finals, representing Spain in the Football category at Edutus University, Hungary. In 2019, the WRO competition reached 75 countries and 29.000 teams participated in it.",
         "start_date": "29-04-2022 6:00 PM",
