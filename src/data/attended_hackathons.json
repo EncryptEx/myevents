@@ -157,7 +157,7 @@
     "description": "We created a functional Telegram chatbot that connected to ChatGPT's API 3.5-turbo model to analyze system log files and then, you could ask over that same document.",
     "start_date": "17-09-2023 5:00AM",
     "end_date": "18-09-2023 9:00PM",
-    "main_url": "https://https://lauzhack.com/",
+    "main_url": "https://lauzhack.com/",
     "devpost_url": "",
     "project_url": "https://github.com/EncryptEx/lauzhack23/",
     "photo_url": "./static/img/lauzhack.png",
@@ -166,6 +166,23 @@
       "coordinates": {
         "lat": 46.51903968360463,
         "lng": 6.56676202592487
+      }
+    }
+  },
+  {
+    "name": "HackUDC 2024",
+    "description": "We developed a tool to render modular, scalable, and groupable and dynamic web forms from a JSON API input, supporting other field-dependencies and third-parties inputs, like reCAPTCHA, etc.",
+    "start_date": "16-02-2024 6:00PM",
+    "end_date": "18-02-2024 6:00PM",
+    "main_url": "https://web.archive.org/web/20230604165222/https://hackudc.gpul.org/",
+    "devpost_url": "https://devpost.com/software/polyform",
+    "project_url": "https://github.com/cucu48/hackudc24/",
+    "photo_url": "./static/img/hackudc24.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 43.332845651456275,
+        "lng": -8.410934102662942
       }
     }
   }
