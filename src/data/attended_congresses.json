@@ -180,7 +180,7 @@
     }
   },
   {
-    "name": "Integrated Systems Europe 2023",
+    "name": "Integrated Systems Europe 2024",
     "description": "The world’s leading AV and systems integration exhibition",
     "start_date": "30-01-2024 10:00AM",
     "end_date": "02-02-2023 4:00PM",
@@ -189,9 +189,39 @@
     "geometry": {
       "type": "Point",
       "coordinates": {
-        "lat": 41.3745016,
-        "lng": 2.1504401
+        "lat": 41.353545766292584,
+        "lng": 2.1322056019512003
+      }
+    }
+  },
+  {
+    "name": "Mobile World Congress 2024",
+    "description": "World's most influential Event For The Connectivity Industry.",
+    "start_date": "26-02-2024 10:00AM",
+    "end_date": "29-02-2023 4:00PM",
+    "main_url": "https://www.mwcbarcelona.com/",
+    "photo_url": "./static/img/mwc.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.354277283901105,
+        "lng": 2.128442801940831
+      }
+    }
+  },{
+    "name": "Advanced Factories 2024",
+    "description": "Discover the largest international showroom on Industry 4.0.",
+    "start_date": "09-03-2024 10:00AM",
+    "end_date": "11-03-2023 4:00PM",
+    "main_url": "https://www.advancedfactories.com//",
+    "photo_url": "./static/img/advfact.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.35460724614633,
+        "lng": 2.1297986635775983
       }
     }
   }
+
 ]
