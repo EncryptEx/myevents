@@ -318,37 +318,37 @@ function monthToString($monthNum)
       </div>
 
       <div class="col-12">
-        <h4 style="margin-top:60px;">Robotic Competitions Attended</h4>
+        <h4 style="margin-top:60px;">Mentored Hackathons</h4>
         <div class="row">
           <?php
-          $organized = retrieve("./data/attended_competitions.json", TRUE);
+          $organized = retrieve("./data/mentored_hackathons.json", TRUE);
           $iteratorCounter = 0;
-          foreach ($organized as $competition):
+          foreach ($organized as $mentored):
             ?>
             <div class="col-12 col-lg-6">
               <div class="row">
                 <div class='col-12 col-md-11 mt-3 mr' id='attended_competitions_<?php echo $iteratorCounter; ?>'>
                   <div class="row mb-4 border rounded shadow p-3">
                     <div class="col-4">
-                      <img src="<?php echo (htmlentities($competition['photo_url'])); ?>" class="portait rounded">
+                      <img src="<?php echo (htmlentities($mentored['photo_url'])); ?>" class="portait rounded">
                     </div>
                     <div class="col-8">
                       <div class="row">
                         <div class="col-12">
                           <h6 style='font-size: 120%; font-weight:bold;'>
-                            <?php echo htmlentities($competition['name']); ?>
+                            <?php echo htmlentities($mentored['name']); ?>
                             <div style="float:right;">
-                              <?php if ($competition['main_url'] != ""): ?>
+                              <?php if ($mentored['main_url'] != ""): ?>
 
                                 <a class="text-decoration-none"
-                                  href='<?php echo htmlentities($competition['main_url']); ?>'>
+                                  href='<?php echo htmlentities($mentored['main_url']); ?>'>
                                   <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
                                 </a>
                               <?php endif;
-                              if (isset($competition['extra_url']) && $competition['extra_url'] != ""): ?>
+                              if (isset($mentored['extra_url']) && $mentored['extra_url'] != ""): ?>
 
                                 <a class="text-decoration-none"
-                                  href='<?php echo htmlentities($competition['extra_url']); ?>'>
+                                  href='<?php echo htmlentities($mentored['extra_url']); ?>'>
                                   <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
                                 </a>
                               <?php endif; ?>
@@ -357,12 +357,82 @@ function monthToString($monthNum)
                         </div>
                         <div class="col-12">
                           <p class='text-muted card-text text-justify'>
-                            <?php echo htmlentities($competition['description']); ?>
+                            <?php echo htmlentities($mentored['description']); ?>
                           </p>
                           <p class='text-muted card-text text-justify'>
                             <?php
-                            $d = $competition['start_date'];
-                            $e = $competition['end_date'];
+                            $d = $mentored['start_date'];
+                            $e = $mentored['end_date'];
+                            $sd = date_parse($d);
+                            $ed = date_parse($e);
+
+                            if ($sd['month'] == $ed['month']) {
+                              $parsedMonth = monthToString($ed['month']);
+                            } else {
+                              $parsedMonth = monthToString($sd['month']) . "-" . monthToString($ed['month']);
+                            }
+                            echo (htmlentities($parsedMonth . " " . $ed['year'])); ?>
+                          </p>
+                          <!-- TODO: do a bs5 tooltip to show date -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <?php
+            $iteratorCounter++;
+          endforeach; ?>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <h4 style="margin-top:60px;">Robotic Competitions Attended</h4>
+        <div class="row">
+          <?php
+          $organized = retrieve("./data/attended_competitions.json", TRUE);
+          $iteratorCounter = 0;
+          foreach ($organized as $mentored):
+            ?>
+            <div class="col-12 col-lg-6">
+              <div class="row">
+                <div class='col-12 col-md-11 mt-3 mr' id='attended_competitions_<?php echo $iteratorCounter; ?>'>
+                  <div class="row mb-4 border rounded shadow p-3">
+                    <div class="col-4">
+                      <img src="<?php echo (htmlentities($mentored['photo_url'])); ?>" class="portait rounded">
+                    </div>
+                    <div class="col-8">
+                      <div class="row">
+                        <div class="col-12">
+                          <h6 style='font-size: 120%; font-weight:bold;'>
+                            <?php echo htmlentities($mentored['name']); ?>
+                            <div style="float:right;">
+                              <?php if ($mentored['main_url'] != ""): ?>
+
+                                <a class="text-decoration-none"
+                                  href='<?php echo htmlentities($mentored['main_url']); ?>'>
+                                  <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
+                                </a>
+                              <?php endif;
+                              if (isset($mentored['extra_url']) && $mentored['extra_url'] != ""): ?>
+
+                                <a class="text-decoration-none"
+                                  href='<?php echo htmlentities($mentored['extra_url']); ?>'>
+                                  <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
+                                </a>
+                              <?php endif; ?>
+                            </div>
+                          </h6>
+                        </div>
+                        <div class="col-12">
+                          <p class='text-muted card-text text-justify'>
+                            <?php echo htmlentities($mentored['description']); ?>
+                          </p>
+                          <p class='text-muted card-text text-justify'>
+                            <?php
+                            $d = $mentored['start_date'];
+                            $e = $mentored['end_date'];
                             $sd = date_parse($d);
                             $ed = date_parse($e);
 
