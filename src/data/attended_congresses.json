@@ -222,6 +222,21 @@
         "lng": 2.1297986635775983
       }
     }
+  },
+  {
+    "name": "FIBVisiona 2024",
+    "description": "A student-led event that aims to bring together the most innovative and disruptive technologies in the world of technology.",
+    "start_date": "24-04-2024 10:00AM",
+    "end_date": "24-04-2023 5:00PM",
+    "main_url": "https://fibvisiona.com/",
+    "photo_url": "./static/img/fibvisiona.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.388179142555835, 
+        "lng": 2.1130329100941747
+      }
+    }
   }
 
 ]
