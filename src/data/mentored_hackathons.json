@@ -1,0 +1,18 @@
+[
+    {
+        "name": "SocialHack PDS",
+        "description": "I helped all participating teams into the hackathon to develop their projects and solve their problems, as well as resolving doubts or suggesting approaches for an optimal solution.",
+        "start_date": "17-11-2023 3:00PM",
+        "end_date": "19-11-2023 1:30PM",
+        "main_url": "https://www.socialhackpds.org/",
+        "devpost_url": "",
+        "photo_url": "./static/img/socialhackpds.jpg",
+        "geometry": {
+          "type": "Point",
+          "coordinates": {
+            "lat": 41.39289329598976, 
+            "lng": 2.174502691650234
+          }
+        }
+      }
+]
