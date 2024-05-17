@@ -52,7 +52,7 @@
     "description": "BarcelonaTech's Student Hackathon. 600 hackers. 36h. May 12-14.",
     "start_date": "2023-05-12 6:00 PM",
     "end_date": "2023-05-14 4:30 PM",
-    "main_url": "https://hackupc.com",
+    "main_url": "https://2023.hackupc.com",
     "devpost_url": "",
     "photo_url": "./static/img/hackupc23.png",
     "geometry": {
@@ -76,6 +76,22 @@
       "coordinates": {
         "lat": 41.388973570659346,
         "lng": 2.113493181585227
+      }
+    }
+  },
+  {
+    "name": "HackUPC 2024",
+    "description": "BarcelonaTech's Student Hackathon. 750 hackers. 36h. May 3rd-5th.",
+    "start_date": "2024-05-03 6:00 PM",
+    "end_date": "2024-05-05 4:30 PM",
+    "main_url": "https://hackupc.com",
+    "devpost_url": "",
+    "photo_url": "./static/img/hackupc24.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.388766441780064,
+        "lng": 2.113205565050903
       }
     }
   }
