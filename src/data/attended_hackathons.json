@@ -187,7 +187,7 @@
     }
   },
   {
-    "name": "Hacknigts 2024 Episode I",
+    "name": "Hacknights 2024 Episode I",
     "description": "I reflashed an Arduino MEGA board with the mocoLUFA firmware to enable USB-to-Serial and USB-to-MIDI communication protocols. This way I could use the board as a MIDI controller for another project that required it.",
     "start_date": "23-02-2023 9:00PM",
     "end_date": "24-02-2023 5:00AM",
@@ -199,6 +199,24 @@
       "coordinates": {
         "lat": 41.38853585618749,
         "lng": 2.1126436429384183
+      }
+    }
+  },
+  {
+    "name": "UAB The Hack",
+    "description": "We built a laravel responsive website that calculated the best path that an bank-office van should take in order to maximize time and the client's needs by using a dataset and a feedback form that we created. I learnt a lot about algorithms and computation.",
+    "start_date": "18-02-2023 8:00AM",
+    "end_date": "19-02-2023 2:00PM",
+    "main_url": "https://www.instagram.com/hackathonuab",
+    "devpost_url": "https://devpost.com/software/caixa-enginyers-mes-a-prop",
+    "extra_url": "https://www.ccma.cat/3cat/hackato-denginyeria-a-la-uab-per-resoldre-reptes-reals-de-les-empreses/video/6283117/#onboarding=true",
+    "project_url" : "https://github.com/ArnauCS03/caixa-enginyers-mes-aprop",
+    "photo_url": "./static/img/uabthehack.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.50067637195339,
+        "lng": 2.112503123627406
       }
     }
   }
