@@ -57,7 +57,71 @@ function monthToString($monthNum)
     #lightSwitch {
       transform: scale(1.8);
     }
+
+    .relativebox {
+      position: relative;
+    }
+
+    .ribbon {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .ribbon::before,
+    .ribbon::after {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      display: block;
+      border: 5px solid #CAA52B;
+    }
+
+    .ribbon span {
+      position: absolute;
+      display: block;
+      width: 225px;
+      padding: 15px 0;
+      background-color: #DFC368;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+      color: #fff;
+      font: 700 18px/1 'Lato', sans-serif;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    /* top left*/
+    .ribbon-top-left {
+      top: -10px;
+      left: -10px;
+    }
+
+    .ribbon-top-left::before,
+    .ribbon-top-left::after {
+      border-top-color: transparent;
+      border-left-color: transparent;
+    }
+
+    .ribbon-top-left::before {
+      top: 0;
+      right: 0;
+    }
+
+    .ribbon-top-left::after {
+      bottom: 0;
+      left: 0;
+    }
+
+    .ribbon-top-left span {
+      right: -25px;
+      top: 30px;
+      transform: rotate(-45deg);
+    }
   </style>
+
+
   <script src="./static/js/toggler.js" defer></script>
 </head>
 
@@ -130,7 +194,7 @@ function monthToString($monthNum)
               extraUrl = "";
               if (event.extra_url != undefined) {
                 // htmlentities in javascript (prevent xss)
-                toAdd = event.extra_url.replace(/[\u00A0-\u9999<>\&]/gim, function (i) {
+                toAdd = event.extra_url.replace(/[\u00A0-\u9999<>\&]/gim, function(i) {
                   return '&#' + i.charCodeAt(0) + ';';
                 });
                 // generate addition text
@@ -146,9 +210,9 @@ function monthToString($monthNum)
                   new mapboxgl.Popup({
                     offset: 25
                   }) // add popups
-                    .setHTML(
-                      `<h3>${event.name}</h3><p>${event.description + extraUrl}</p>`
-                    )
+                  .setHTML(
+                    `<h3>${event.name}</h3><p>${event.description + extraUrl}</p>`
+                  )
                 )
                 .addTo(map);
 
@@ -171,7 +235,7 @@ function monthToString($monthNum)
           $iteratorCounter = 0;
           foreach ($organized as $hackathon):
 
-            ?>
+          ?>
             <div class="col-12 col-lg-6">
               <div class="row">
                 <div class='col-md-11 col-12 mt-3' id='organized_hackathons_<?php echo $iteratorCounter; ?>'>
@@ -228,7 +292,7 @@ function monthToString($monthNum)
                 </div>
               </div>
             </div>
-            <?php
+          <?php
             $iteratorCounter++;
           endforeach;
           ?>
@@ -245,11 +309,17 @@ function monthToString($monthNum)
           $organized = retrieve("./data/attended_hackathons.json", TRUE);
           foreach ($organized as $hackathon):
 
-            ?>
+          ?>
 
             <div class="col-12 col-lg-6">
               <div class="row">
-                <div class='col-12 col-md-11 mt-3 mr' id='attended_hackathons_<?php echo $iteratorCounter; ?>'>
+                <?php if ($hackathon['winner_text']): ?>
+                <div class='relativebox col-12 col-md-11 mt-3 mr' id='attended_hackathons_<?php echo $iteratorCounter; ?>'>
+                  
+                  <div class="ribbon ribbon-top-left"><span><?php echo (htmlentities($hackathon['winner_text'])); ?></span></div>
+                  <?php else: ?>
+                    <div class='col-12 col-md-11 mt-3 mr' id='attended_hackathons_<?php echo $iteratorCounter; ?>'>
+                      <?php endif; ?>
                   <div class="row mb-4 border rounded shadow p-3">
                     <div class="col-4">
                       <img src="<?php echo (htmlentities($hackathon['photo_url'])); ?>" class="portait rounded">
@@ -309,7 +379,7 @@ function monthToString($monthNum)
                 </div>
               </div>
             </div>
-            <?php
+          <?php
             $iteratorCounter++;
           endforeach;
           ?>
@@ -324,7 +394,7 @@ function monthToString($monthNum)
           $organized = retrieve("./data/mentored_hackathons.json", TRUE);
           $iteratorCounter = 0;
           foreach ($organized as $mentored):
-            ?>
+          ?>
             <div class="col-12 col-lg-6">
               <div class="row">
                 <div class='col-12 col-md-11 mt-3 mr' id='attended_competitions_<?php echo $iteratorCounter; ?>'>
@@ -381,7 +451,7 @@ function monthToString($monthNum)
                 </div>
               </div>
             </div>
-            <?php
+          <?php
             $iteratorCounter++;
           endforeach; ?>
         </div>
@@ -394,7 +464,7 @@ function monthToString($monthNum)
           $organized = retrieve("./data/attended_competitions.json", TRUE);
           $iteratorCounter = 0;
           foreach ($organized as $mentored):
-            ?>
+          ?>
             <div class="col-12 col-lg-6">
               <div class="row">
                 <div class='col-12 col-md-11 mt-3 mr' id='attended_competitions_<?php echo $iteratorCounter; ?>'>
@@ -451,7 +521,7 @@ function monthToString($monthNum)
                 </div>
               </div>
             </div>
-            <?php
+          <?php
             $iteratorCounter++;
           endforeach; ?>
         </div>
@@ -465,7 +535,7 @@ function monthToString($monthNum)
           $organized = retrieve("./data/attended_congresses.json", TRUE);
           $iteratorCounter = 0;
           foreach ($organized as $congress):
-            ?>
+          ?>
             <div class="col-12 col-lg-6">
               <div class="row">
                 <div class='col-12 col-md-11 mt-3 mr' id='attended_congresses_<?php echo $iteratorCounter; ?>'>
@@ -518,7 +588,7 @@ function monthToString($monthNum)
                 </div>
               </div>
             </div>
-            <?php
+          <?php
             $iteratorCounter++;
           endforeach; ?>
         </div>

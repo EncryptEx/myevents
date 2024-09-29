@@ -205,6 +205,7 @@
   {
     "name": "UAB The Hack",
     "description": "We built a laravel responsive website that calculated the best path that an bank-office van should take in order to maximize time and the client's needs by using a dataset and a feedback form that we created. I learnt a lot about algorithms and computation.",
+    "winner_text": "2º PLACE",
     "start_date": "18-05-2023 8:00AM",
     "end_date": "19-05-2023 2:00PM",
     "main_url": "https://www.instagram.com/hackathonuab",
