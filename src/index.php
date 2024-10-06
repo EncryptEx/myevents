@@ -177,7 +177,7 @@ function monthToString($monthNum)
 
       function generateMarkers(jsonFile, photourls) {
         var identifier = 0;
-        fetch(jsonFile)
+        fetch(jsonFile + "?nocache=" + (new Date()).getTime())
           .then((response) => response.json())
           .then((json) => {
 
@@ -221,7 +221,7 @@ function monthToString($monthNum)
             }
           });
       }
-      generateMarkers("./data/attended_hackathons.json");
+      generateMarkers("./data/attended_hackathons.json?");
       generateMarkers("./data/attended_congresses.json");
       generateMarkers("./data/organized_hackathons.json");
       generateMarkers("./data/attended_competitions.json");
