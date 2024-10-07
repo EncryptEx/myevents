@@ -241,5 +241,21 @@
         "lng": -71.09650040910921
       }
     }
+  },
+  {
+    "name": "Hacknights 2024 Episode III",
+    "description": "A friend and I made a IRL controller for a tank videgame, the next step is to build it like a simulator where the turret will be moved through a series of levers and cogs.",
+    "start_date": "27-09-2024 9:00PM",
+    "end_date": "28-09-2024 5:00AM",
+    "main_url": "/https://hacknights.dev/",
+    "devpost_url": "",
+    "photo_url": "./static/img/hacknights.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.38853585618649,
+        "lng": 2.1126436429384283
+      }
+    }
   }
 ]
