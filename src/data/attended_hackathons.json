@@ -257,5 +257,39 @@
         "lng": 2.1126436429384283
       }
     }
+  },
+  {
+    "name": "Datathon 2024",
+    "description": "We tried for the first time the data science world, and it was a blast! From scratch, we developed a ML model able to predict the listing price of a Chicago house based on some features (AKA columns or context data) using a RandomTreeForest algorithm with python.",
+    "start_date": "14-09-2024 8:00AM",
+    "end_date": "15-09-2024 6:00PM",
+    "main_url": "https://datathon.cat",
+    "devpost_url": "https://dorahacks.io/buidl/19814",
+    "project_url" : "https://github.com/GenisLopez5/DatathonFME2024/",
+    "photo_url": "./static/img/datathon.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.383467406276125, 
+        "lng": 2.115797168577499
+      }
+    }
+  },
+  {
+    "name": "HackEPS 2024",
+    "description": "We built a complete progressive web app with Laravel able to monitor, control, preview, analyze and predict public parking data. we even added extra feature like a heat-map or dark mode support",
+    "start_date": "23-09-2024 8:00AM",
+    "end_date": "24-09-2024 6:00PM",
+    "main_url": "https://lleidahack.dev/hackeps",
+    "devpost_url": "https://devpost.com/software/aparcapp",
+    "project_url" : "https://github.com/GenisLopez5/HackEPS2024/",
+    "photo_url": "./static/img/hackeps24.jpeg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.6084957835206,
+        "lng": 0.6235172632406042
+      }
+    }
   }
 ]
