@@ -291,5 +291,23 @@
         "lng": 0.6235172632406042
       }
     }
+  },
+  {
+    "name": "LauzHack 2024",
+    "description": "We bulit a conveyor belt machine with IOT real-time connectivity and a digital twin to monitor and control the machine remotely. We added an AI agent called Bob who could diagnose and control the machine under your prompts.",
+    "start_date": "30-11-2024 7:00AM",
+    "end_date": "01-12-12-2024 6:00PM",
+    "main_url": "https://lauzhack.com",
+    "devpost_url": "https://lauzhack.com/projects.html",
+    "project_url" : "https://github.com/EncryptEx/machine-control-monitoring/",
+    "winner_text": "1º PLACE",
+    "photo_url": "./static/img/lauzhack.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 46.51903968360463,
+        "lng": 6.56676202592487
+      }
+    }
   }
 ]
