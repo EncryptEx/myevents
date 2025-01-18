@@ -53,7 +53,7 @@
     "start_date": "2023-05-12 6:00 PM",
     "end_date": "2023-05-14 4:30 PM",
     "main_url": "https://2023.hackupc.com",
-    "devpost_url": "",
+    "devpost_url": "https://hackupc-2023.devpost.com",
     "photo_url": "./static/img/hackupc23.png",
     "geometry": {
       "type": "Point",
@@ -85,7 +85,7 @@
     "start_date": "2024-05-03 6:00 PM",
     "end_date": "2024-05-05 4:30 PM",
     "main_url": "https://hackupc.com",
-    "devpost_url": "",
+    "devpost_url": "https://hackupc-2024.devpost.com",
     "photo_url": "./static/img/hackupc24.png",
     "geometry": {
       "type": "Point",
