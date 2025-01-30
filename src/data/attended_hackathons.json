@@ -247,7 +247,7 @@
     "description": "A friend and I made a IRL controller for a tank videgame, the next step is to build it like a simulator where the turret will be moved through a series of levers and cogs.",
     "start_date": "27-09-2024 9:00PM",
     "end_date": "28-09-2024 5:00AM",
-    "main_url": "/https://hacknights.dev/",
+    "main_url": "https://hacknights.dev/",
     "devpost_url": "",
     "photo_url": "./static/img/hacknights.png",
     "geometry": {
@@ -307,6 +307,23 @@
       "coordinates": {
         "lat": 46.51903968360463,
         "lng": 6.56676202592487
+      }
+    }
+  },
+  {
+    "name": "Global GameJam 2025",
+    "description": "I built a game with Procedural Map Generation using the Wave Function Collapse algorithm. The game was a 3D maze where you had to make tricks in order to obtain the most amount of points.",
+    "start_date": "24-01-2024 5:00PM",
+    "end_date": "26-01-2024 5:00PM",
+    "main_url": "https://gamejambcn.com/",
+    "devpost_url": "https://globalgamejam.org/games/2025/bubbletea-7",
+    "extr" : "https://github.com/EncryptEx/machine-control-monitoring/",
+    "photo_url": "./static/img/gjb.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.38885512891839,
+        "lng": 2.11308193986364
       }
     }
   }
