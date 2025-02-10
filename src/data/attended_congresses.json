@@ -183,7 +183,7 @@
     "name": "Integrated Systems Europe 2024",
     "description": "The world’s leading AV and systems integration exhibition",
     "start_date": "30-01-2024 10:00AM",
-    "end_date": "02-02-2023 4:00PM",
+    "end_date": "02-02-2024 4:00PM",
     "main_url": "https://web.archive.org/web/20240119173749/https://www.iseurope.org/",
     "photo_url": "./static/img/ise23.jpg",
     "geometry": {
@@ -198,7 +198,7 @@
     "name": "Mobile World Congress 2024",
     "description": "World's most influential Event For The Connectivity Industry.",
     "start_date": "26-02-2024 10:00AM",
-    "end_date": "29-02-2023 4:00PM",
+    "end_date": "29-02-2024 4:00PM",
     "main_url": "https://www.mwcbarcelona.com/",
     "photo_url": "./static/img/mwc.jpg",
     "geometry": {
@@ -212,7 +212,7 @@
     "name": "Advanced Factories 2024",
     "description": "Discover the largest international showroom on Industry 4.0.",
     "start_date": "09-03-2024 10:00AM",
-    "end_date": "11-03-2023 4:00PM",
+    "end_date": "11-03-2024 4:00PM",
     "main_url": "https://www.advancedfactories.com//",
     "photo_url": "./static/img/advfact.png",
     "geometry": {
@@ -227,7 +227,7 @@
     "name": "FIBVisiona 2024",
     "description": "A student-led event that aims to bring together the most innovative and disruptive technologies in the world of technology.",
     "start_date": "24-04-2024 10:00AM",
-    "end_date": "24-04-2023 5:00PM",
+    "end_date": "24-04-2024 5:00PM",
     "main_url": "https://fibvisiona.com/",
     "photo_url": "./static/img/fibvisiona.png",
     "geometry": {
@@ -240,10 +240,10 @@
   },
   {
     "name": "IOT Solutions World Congress 2024",
-    "description": "",
+    "description": "Speakers will share use cases around transformative technologies like IoT, AI, 5G, and more.",
     "start_date": "21-05-2024 10:00AM",
-    "end_date": "23-04-2023 4:00PM",
-    "main_url": "",
+    "end_date": "23-04-2024 4:00PM",
+    "main_url": "https://www.iotsworldcongress.com/",
     "photo_url": "./static/img/iotswc.png",
     "geometry": {
       "type": "Point",
@@ -255,16 +255,31 @@
   },
   {
     "name": "Barcelona Cybersecurity Congress 2024",
-    "description": "",
+    "description": "Find solutions to cybersecurity challenges and discover new ways of collaboration.",
     "start_date": "21-05-2024 10:00AM",
-    "end_date": "23-04-2023 4:00PM",
-    "main_url": "",
+    "end_date": "23-04-2024 4:00PM",
+    "main_url": "https://www.barcelonacybersecuritycongress.com/",
     "photo_url": "./static/img/bcc.jpg",
     "geometry": {
       "type": "Point",
       "coordinates": {
         "lat": 41.35667980990964, 
         "lng": 2.1295668649623662
+      }
+    }
+  },
+  {
+    "name": "Integrated Systems Europe 2025",
+    "description": "The world’s leading AV and systems integration exhibition",
+    "start_date": "04-02-2024 10:00AM",
+    "end_date": "07-02-2024 4:00PM",
+    "main_url": "https://www.iseurope.org/",
+    "photo_url": "./static/img/ise23.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.353545766292584,
+        "lng": 2.1322056019512003
       }
     }
   }
