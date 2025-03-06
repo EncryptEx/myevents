@@ -208,7 +208,8 @@
         "lng": 2.128442801940831
       }
     }
-  },{
+  },
+  {
     "name": "Advanced Factories 2024",
     "description": "Discover the largest international showroom on Industry 4.0.",
     "start_date": "09-03-2024 10:00AM",
@@ -271,8 +272,8 @@
   {
     "name": "Integrated Systems Europe 2025",
     "description": "The world’s leading AV and systems integration exhibition",
-    "start_date": "04-02-2024 10:00AM",
-    "end_date": "07-02-2024 4:00PM",
+    "start_date": "04-02-2025 10:00AM",
+    "end_date": "07-02-2025 4:00PM",
     "main_url": "https://www.iseurope.org/",
     "photo_url": "./static/img/ise23.jpg",
     "geometry": {
@@ -280,6 +281,20 @@
       "coordinates": {
         "lat": 41.353545766292584,
         "lng": 2.1322056019512003
+      }
+    }
+  },{
+    "name": "Mobile World Congress 2025",
+    "description": "World's most influential Event For The Connectivity Industry.",
+    "start_date": "03-03-2025 10:00AM",
+    "end_date": "06-03-2025 4:00PM",
+    "main_url": "https://www.mwcbarcelona.com/",
+    "photo_url": "./static/img/mwc.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.354277283901105,
+        "lng": 2.128442801940831
       }
     }
   }

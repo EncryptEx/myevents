@@ -326,5 +326,20 @@
         "lng": 2.11308193986364
       }
     }
+  },
+  {
+    "name": "Hacknigts 2025 Episode I",
+    "description": "I tried for the first time the YOLOv11n model and messed arround with my new raspberry pi 5. I also helped a friend of mine to create a multiplayer videogame in Unity with the help of a Tp-link router, while also learning the protocols and the communications behind.",
+    "start_date": "21-02-2024 9:00PM",
+    "end_date": "22-02-2024 6:00AM",
+    "main_url": "https://hacknights.dev",
+    "photo_url": "./static/img/hacknights.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.38853585618749,
+        "lng": 2.1126436429384183
+      }
+    }
   }
 ]
