@@ -205,7 +205,7 @@
     }
   },
   {
-    "name": "UAB The Hack",
+    "name": "UAB The Hack 2024",
     "description": "We built a laravel responsive website that calculated the best path that an bank-office van should take in order to maximize time and the client's needs by using a dataset and a feedback form that we created. I learnt a lot about algorithms and computation.",
     "winner_text": "2º PLACE",
     "start_date": "18-05-2024 8:00AM",
@@ -339,6 +339,23 @@
       "coordinates": {
         "lat": 41.38853585618749,
         "lng": 2.1126436429384183
+      }
+    }
+  },
+  {
+    "name": "UAB The Hack 2025",
+    "description": "Enhanced online payment security and accessibility in Latin America through a Chrome extension that integrates anti-phishing protection, payment method detection and intersection, and alternatve products' suggestion, complemented by a Blazor web portal that delivers real-time analytics using Firebase and Azure OpenAI.",
+    "start_date": "15-04-2025 8:00AM",
+    "end_date": "16-04-2025 2:00PM",
+    "main_url": "https://www.instagram.com/hackathonuab",
+    "devpost_url": "https://devpost.com/software/checkit-4x97cp",
+    "project_url" : "https://github.com/EncryptEx/checkIt",
+    "photo_url": "./static/img/uabthehack.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.50067637195339,
+        "lng": 2.112503123627406
       }
     }
   }
