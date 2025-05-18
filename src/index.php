@@ -313,7 +313,7 @@ function monthToString($monthNum)
 
             <div class="col-12 col-lg-6">
               <div class="row">
-                <?php if ($hackathon['winner_text']): ?>
+                <?php if (isset($hackathon['winner_text'])): ?>
                 <div class='relativebox col-12 col-md-11 mt-3 mr' id='attended_hackathons_<?php echo $iteratorCounter; ?>'>
                   
                   <div class="ribbon ribbon-top-left"><span><?php echo (htmlentities($hackathon['winner_text'])); ?></span></div>
