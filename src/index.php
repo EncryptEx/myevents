@@ -169,8 +169,8 @@ function monthToString($monthNum)
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v12',
         // Europe / Spain  Zoom
-        center: [0.6, 41],
-        zoom: 3
+        center: [20.300080408981785, 40.74456809885214],
+        zoom: 1.2
       });
 
 

@@ -210,6 +210,21 @@
     }
   },
   {
+    "name": "4 Years From Now 2024",
+    "description": "The startup business platform that enables startups, investors and companies to connect and launch new business ventures together.",
+    "start_date": "26-02-2024 10:00AM",
+    "end_date": "29-02-2024 4:00PM",
+    "main_url": "https://www.4yfn.com/",
+    "photo_url": "./static/img/4yfn.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.35581903318689,
+        "lng": 2.136694868608629
+      }
+    }
+  },
+  {
     "name": "Advanced Factories 2024",
     "description": "Discover the largest international showroom on Industry 4.0.",
     "start_date": "09-03-2024 10:00AM",
@@ -234,7 +249,7 @@
     "geometry": {
       "type": "Point",
       "coordinates": {
-        "lat": 41.388179142555835, 
+        "lat": 41.388179142555835,
         "lng": 2.1130329100941747
       }
     }
@@ -249,7 +264,7 @@
     "geometry": {
       "type": "Point",
       "coordinates": {
-        "lat": 41.35529132528533, 
+        "lat": 41.35529132528533,
         "lng": 2.131108809494324
       }
     }
@@ -264,7 +279,7 @@
     "geometry": {
       "type": "Point",
       "coordinates": {
-        "lat": 41.35667980990964, 
+        "lat": 41.35667980990964,
         "lng": 2.1295668649623662
       }
     }
@@ -283,7 +298,8 @@
         "lng": 2.1322056019512003
       }
     }
-  },{
+  },
+  {
     "name": "Mobile World Congress 2025",
     "description": "World's most influential Event For The Connectivity Industry.",
     "start_date": "03-03-2025 10:00AM",
@@ -297,6 +313,80 @@
         "lng": 2.128442801940831
       }
     }
+  },
+  {
+    "name": "4 Years From Now 2025",
+    "description": "The startup business platform that enables startups, investors and companies to connect and launch new business ventures together.",
+    "start_date": "03-03-2025 10:00AM",
+    "end_date": "06-03-2025 4:00PM",
+    "main_url": "https://www.4yfn.com/",
+    "photo_url": "./static/img/4yfn.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.35581903318689,
+        "lng": 2.136694868608629
+      }
+    }
+  },
+  {
+    "name": "Advanced Factories 2025",
+    "description": "Discover the largest international showroom on Industry 4.0.",
+    "start_date": "09-03-2025 10:00AM",
+    "end_date": "11-03-2025 4:00PM",
+    "main_url": "https://www.advancedfactories.com//",
+    "photo_url": "./static/img/advfact.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.35460724614633,
+        "lng": 2.1297986635775983
+      }
+    }
+  },
+  {
+    "name": "FIBVisiona 2025",
+    "description": "A student-led event that aims to bring together the most innovative and disruptive technologies in the world of technology.",
+    "start_date": "30-04-2025 10:00AM",
+    "end_date": "30-04-2025 5:00PM",
+    "main_url": "https://fibvisiona.com/",
+    "photo_url": "./static/img/fibvisiona.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.388179142555835,
+        "lng": 2.1130329100941747
+      }
+    }
+  },
+  {
+    "name": "IOT Solutions World Congress 2025",
+    "description": "More than 250 ground-breaking speakers will take the stage in Barcelona (13-15 May) to share their use cases around the transformative power of disruptive technologies including IoT, AI, digital twin, 5G, edge, augmented reality, quantum computing and more.",
+    "start_date": "13-05-2025 8:00 AM",
+    "end_date": "15-05-2025 5:00 PM",
+    "main_url": "https://www.iotsworldcongress.com/",
+    "photo_url": "./static/img/iotswc.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.35494571433193,
+        "lng": 2.1332918680309376
+      }
+    }
+  },
+  {
+    "name": "Barcelona Cybersecurity Congress 2025",
+    "description": "Join your peers, stakeholder, industry players and providers at the Barcelona Cybersecurity Congress to find real solutions to the challenges and needs of the sector and discover new ways of collaboration to build a better digital world.",
+    "start_date": "13-05-2025 8:00 AM",
+    "end_date": "15-05-2025 5:00 PM",
+    "main_url": "https://www.barcelonacybersecuritycongress.com/",
+    "photo_url": "./static/img/bcc.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.35420804474296,
+        "lng": 2.1333789636551046
+      }
+    }
   }
-
 ]
