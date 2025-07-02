@@ -388,5 +388,20 @@
         "lng": 2.1333789636551046
       }
     }
+  },
+  {
+    "name": "Sónar 2025 - Sónar by Day",
+    "description": "A celebration of music, innovation, and creativity, Sónar by Day 2025 brings together artists, technologists, and visionaries to explore the future of sound and digital culture.",
+    "start_date": "18-06-2025 8:00 AM",
+    "end_date": "20-06-2025 5:00 PM",
+    "main_url": "https://sonar.es/",
+    "photo_url": "./static/img/sonar.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.37225948881566, 
+        "lng": 2.152048867975866
+      }
+    }
   }
 ]
