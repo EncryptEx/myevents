@@ -358,5 +358,38 @@
         "lng": 2.112503123627406
       }
     }
+  },
+  {
+    "name": "[craft]",
+    "description": "In this live co-working session for side-project ideas, I built a photo gallery app using Node.js and Express. The application features photo uploading and display, a responsive design with a masonry layout, a lightbox for viewing images, and lazy loading for optimized performance. The project is also containerized with Docker for easy deployment.",
+    "start_date": "26-07-2025 4:00PM",
+    "end_date": "26-07-2025 5:00PM",
+    "main_url": "https://lu.ma/craft_",
+    "project_url" : "https://github.com/encryptEx/photogallery",
+    "photo_url": "./static/img/craft.jpeg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 51.5072,
+        "lng": -0.1276
+      }
+    }
+  },
+  {
+    "name": "HackTheNorth 2025",
+   "description": "We built a VS Code extension that eliminates project setup time by generating fully functional starter projects with a single click. The extension features a where users can set up their favorite frameworks like React, Django, Flask, FastAPI, and Node.js. Rocketize automatically configures virtual environments, installs dependencies, scaffolds starter files, and sets up devcontainers or workspaces in seconds.",
+    "start_date": "12-09-2025 6:00PM",
+    "end_date": "14-09-2025 5:00PM",
+    "main_url": "https://hackthenorth.com",
+    "project_url" : "https://github.com/encryptEx/HackTheNorth25",
+    "devpost_url": "https://devpost.com/software/rocketize",
+    "photo_url": "./static/img/htn25.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 43.47322837607073,
+        "lng": -80.53999678531565
+      }
+    }
   }
 ]
