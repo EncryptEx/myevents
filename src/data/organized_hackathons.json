@@ -7,6 +7,7 @@
     "main_url": "https://www.fib.upc.edu/ca/la-marato/edicions-anteriors/hackaton-la-salut-mental",
     "devpost_url": "https://bitsxlamarato-2021.devpost.com/",
     "photo_url": "./static/img/bits.png",
+    "type": "Hackathon",
     "geometry": {
       "type": "Point",
       "coordinates": {
@@ -23,6 +24,7 @@
     "main_url": "https://2022.hackupc.com",
     "devpost_url": "https://hackupc-2022.devpost.com/",
     "photo_url": "./static/img/hackupc22.png",
+    "type": "Hackathon",
     "geometry": {
       "type": "Point",
       "coordinates": {
@@ -39,6 +41,7 @@
     "main_url": "https://www.fib.upc.edu/la-marato",
     "devpost_url": "https://bitsxlamarato-2022.devpost.com/",
     "photo_url": "./static/img/bits.png",
+    "type": "Hackathon",
     "geometry": {
       "type": "Point",
       "coordinates": {
@@ -55,6 +58,7 @@
     "main_url": "https://2023.hackupc.com",
     "devpost_url": "https://hackupc-2023.devpost.com",
     "photo_url": "./static/img/hackupc23.png",
+    "type": "Hackathon",
     "geometry": {
       "type": "Point",
       "coordinates": {
@@ -71,6 +75,7 @@
     "main_url": "https://www.fib.upc.edu/la-marato",
     "devpost_url": "https://bitsxlamarato-2023.devpost.com/",
     "photo_url": "./static/img/bits.png",
+    "type": "Hackathon",
     "geometry": {
       "type": "Point",
       "coordinates": {
@@ -87,6 +92,7 @@
     "main_url": "https://2024.hackupc.com",
     "devpost_url": "https://hackupc-2024.devpost.com",
     "photo_url": "./static/img/hackupc24.png",
+    "type": "Hackathon",
     "geometry": {
       "type": "Point",
       "coordinates": {
@@ -103,6 +109,7 @@
     "main_url": "https://www.fib.upc.edu/la-marato",
     "devpost_url": "https://bitsxlamarato-2024.devpost.com/",
     "photo_url": "./static/img/bits.png",
+    "type": "Hackathon",
     "geometry": {
       "type": "Point",
       "coordinates": {
@@ -119,6 +126,7 @@
     "main_url": "https://hackupc.com",
     "devpost_url": "https://hackupc-2025.devpost.com",
     "photo_url": "./static/img/hackupc25.png",
+    "type": "Hackathon",
     "geometry": {
       "type": "Point",
       "coordinates": {
@@ -130,10 +138,11 @@
   {
     "name": "[crea] #1",
     "description": "Inspired by [craft], I organized a live co-working session for side-project ideas, focusing on creativity and collaboration. The only rule was to create, tinker or continue your side project (non-work/school related).",
-    "start_date": "2025-05-02 6:00 PM",
-    "end_date": "2025-05-04 4:30 PM",
+    "start_date": "2025-09-19 5:00 PM",
+    "end_date": "2025-09-19 11:59 PM",
     "main_url": "https://lu.ma/crea",
     "photo_url": "./static/img/crea.png",
+    "type": "Meetup",
     "geometry": {
       "type": "Point",
       "coordinates": {
@@ -141,6 +150,37 @@
         "lng": 2.112507931278272
       }
     }
-  }  
-
+  },
+  {
+    "name": "[ensemble] Summer '25",
+    "description": "A weekend unconference to connect, learn, and grow together. Helped organize the event by doing volunteering and also running a booth about how I build my last side project: 'webradio'.",
+    "start_date": "2025-09-02 6:00 PM",
+    "end_date": "2025-09-04 4:30 PM",
+    "main_url": "https://ensemble.rodeo",
+    "photo_url": "./static/img/ensemble.jpg",
+    "type": "Unconference",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.3888530221366,
+        "lng": 2.112507931278272
+      }
+    }
+  },
+  {
+    "name": "[crea] #2",
+    "description": "Continuing the series, I organized a live co-working session for side-project ideas, focusing on creativity and collaboration. The only rule was to create, tinker or continue your side project (non-work/school related).",
+    "start_date": "2025-05-02 6:00 PM",
+    "end_date": "2025-05-04 4:30 PM",
+    "main_url": "https://lu.ma/crea",
+    "photo_url": "./static/img/crea.png",
+    "type": "Meetup",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.3888530221366,
+        "lng": 2.112507931278272
+      }
+    }
+  }
 ]

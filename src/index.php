@@ -29,6 +29,15 @@ function monthToString($monthNum)
   return $months[$monthNum];
 }
 
+function typeToColor($type){
+  $colors = [
+    'Hackathon' => 'bg-primary',
+    'Unconference' => 'bg-success',
+    'Meetup' => 'bg-info',
+  ];
+  return $colors[$type] ?? 'bg-black';
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -228,7 +237,7 @@ function monthToString($monthNum)
     </script>
     <div class="row">
       <div class="col-12">
-        <h4>Hackathons Organized</h4>
+        <h4>Events Organized</h4>
         <div class="row">
           <?php
           $organized = retrieve("./data/organized_hackathons.json", TRUE);
@@ -248,6 +257,7 @@ function monthToString($monthNum)
                         <div class="col-12">
                           <h6 style='font-size: 120%; font-weight:bold;'>
                             <?php echo htmlentities($hackathon['name']); ?>
+                            
                             <div style="float:right;">
                               <?php if (isset($hackathon['main_url']) && $hackathon['main_url'] != ""): ?>
 
@@ -268,7 +278,7 @@ function monthToString($monthNum)
                           <p class='text-muted card-text text-justify'>
                             <?php echo htmlentities($hackathon['description']); ?>
                           </p>
-                          <p class='text-muted card-text text-justify'>
+                          <span class='text-muted card-text text-justify'>
                             <?php
                             $d = $hackathon['start_date'];
                             $e = $hackathon['end_date'];
@@ -281,7 +291,10 @@ function monthToString($monthNum)
                               $parsedMonth = monthToString($sd['month']) . "-" . monthToString($ed['month']);
                             }
                             echo (htmlentities($parsedMonth . " " . $ed['year'])); ?>
-                          </p>
+                          </span>
+                          <?php if (isset($hackathon['type'])): ?>
+                            <span style='float:right;' class="badge <?php echo typeToColor(htmlentities($hackathon['type'])); ?> rounded-pill"><?php echo htmlentities($hackathon['type']); ?></span>
+                          <?php endif; ?>
                           <!-- TODO: do a bs5 tooltip to show date -->
                         </div>
                       </div>
