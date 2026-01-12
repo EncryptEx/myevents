@@ -403,5 +403,20 @@
         "lng": 2.152048867975866
       }
     }
+  },
+  {
+    "name": "PyCon ES 2025",
+    "description": "A national conference of Python, with +1k participants and almost 100 talks in a single weekend. Learned about the latest developments in the Python ecosystem, attend workshops, and network with fellow Python enthusiasts.",
+    "start_date": "17-10-25 9:00 PM",
+    "end_date": "19-10-25 6:00PM",
+    "main_url": "https://2025.es.pycon.org/",
+    "photo_url": "./static/img/pycones25.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 37.35518077444544,
+        "lng": -5.937500663083898
+      }
+    }
   }
 ]
