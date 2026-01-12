@@ -32,8 +32,8 @@
   {
     "name": "4 Years From Now 2021",
     "description": "The startup business platform that enables startups, investors and companies to connect and launch new business ventures together.",
-    "start_date": "28-06-2019 8:00 AM",
-    "end_date": "01-07-2019 4:00 PM",
+    "start_date": "28-06-2021 8:00 AM",
+    "end_date": "01-07-2021 4:00 PM",
     "main_url": "https://web.archive.org/web/20210628060835/https://www.4yfn.com/",
     "photo_url": "./static/img/4yfn.jpg",
     "geometry": {
@@ -258,7 +258,7 @@
     "name": "IOT Solutions World Congress 2024",
     "description": "Speakers will share use cases around transformative technologies like IoT, AI, 5G, and more.",
     "start_date": "21-05-2024 10:00AM",
-    "end_date": "23-04-2024 4:00PM",
+    "end_date": "23-05-2024 4:00PM",
     "main_url": "https://www.iotsworldcongress.com/",
     "photo_url": "./static/img/iotswc.png",
     "geometry": {
@@ -273,7 +273,7 @@
     "name": "Barcelona Cybersecurity Congress 2024",
     "description": "Find solutions to cybersecurity challenges and discover new ways of collaboration.",
     "start_date": "21-05-2024 10:00AM",
-    "end_date": "23-04-2024 4:00PM",
+    "end_date": "23-05-2024 4:00PM",
     "main_url": "https://www.barcelonacybersecuritycongress.com/",
     "photo_url": "./static/img/bcc.jpg",
     "geometry": {

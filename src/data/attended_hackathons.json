@@ -72,8 +72,8 @@
   {
     "name": "Hacknigts 2023 Episode I",
     "description": "We developed and progressed in some side projects while discovering other people's creations.",
-    "start_date": "24-03-2023 5:00AM",
-    "end_date": "23-03-2023 9:30PM",
+    "start_date": "23-03-2023 5:00AM",
+    "end_date": "24-03-2023 9:30PM",
     "main_url": "https://web.archive.org/web/20230314223149/https://hacknights.dev/",
     "devpost_url": "",
     "photo_url": "./static/img/hacknights.png",
@@ -88,8 +88,8 @@
   {
     "name": "Hacknigts 2023 Episode III",
     "description": "We created a fully functional robot using Arduino UNO and the L293D chip to invert the motor's phase.",
-    "start_date": "30-09-2023 9:00PM",
-    "end_date": "29-09-2023 5:00AM",
+    "start_date": "29-09-2023 9:00PM",
+    "end_date": "30-09-2023 5:00AM",
     "main_url": "https://web.archive.org/web/20231114080947/https://hacknights.dev/",
     "devpost_url": "",
     "photo_url": "./static/img/hacknights.png",
@@ -157,8 +157,8 @@
   {
     "name": "LauzHack 2023",
     "description": "We created a functional Telegram chatbot that connected to ChatGPT's API 3.5-turbo model to analyze system log files and then, you could ask over that same document.",
-    "start_date": "17-11-2023 5:00AM",
-    "end_date": "18-11-2023 9:00PM",
+    "start_date": "02-12-2023 5:00AM",
+    "end_date": "03-12-2023 9:00PM",
     "main_url": "https://lauzhack.com/",
     "devpost_url": "",
     "project_url": "https://github.com/EncryptEx/lauzhack23/",
@@ -261,8 +261,8 @@
   {
     "name": "Datathon 2024",
     "description": "We tried for the first time the data science world, and it was a blast! From scratch, we developed a ML model able to predict the listing price of a Chicago house based on some features (AKA columns or context data) using a RandomTreeForest algorithm with python.",
-    "start_date": "14-09-2024 8:00AM",
-    "end_date": "15-09-2024 6:00PM",
+    "start_date": "16-11-2024 8:00AM",
+    "end_date": "17-11-2024 6:00PM",
     "main_url": "https://datathon.cat",
     "devpost_url": "https://dorahacks.io/buidl/19814",
     "project_url" : "https://github.com/GenisLopez5/DatathonFME2024/",
@@ -278,8 +278,8 @@
   {
     "name": "HackEPS 2024",
     "description": "We built a complete progressive web app with Laravel able to monitor, control, preview, analyze and predict public parking data. we even added extra feature like a heat-map or dark mode support",
-    "start_date": "23-09-2024 8:00AM",
-    "end_date": "24-09-2024 6:00PM",
+    "start_date": "23-11-2024 8:00AM",
+    "end_date": "24-11-2024 6:00PM",
     "main_url": "https://lleidahack.dev/hackeps",
     "devpost_url": "https://devpost.com/software/aparcapp",
     "project_url" : "https://github.com/GenisLopez5/HackEPS2024/",
@@ -313,8 +313,8 @@
   {
     "name": "Global GameJam 2025",
     "description": "I built a game with Procedural Map Generation using the Wave Function Collapse algorithm. The game was a 3D maze where you had to make tricks in order to obtain the most amount of points.",
-    "start_date": "24-01-2024 5:00PM",
-    "end_date": "26-01-2024 5:00PM",
+    "start_date": "24-01-2025 5:00PM",
+    "end_date": "26-01-2025 5:00PM",
     "main_url": "https://gamejambcn.com/",
     "devpost_url": "https://globalgamejam.org/games/2025/bubbletea-7",
     "extr" : "https://github.com/EncryptEx/machine-control-monitoring/",
@@ -330,8 +330,8 @@
   {
     "name": "Hacknigts 2025 Episode I",
     "description": "I tried for the first time the YOLOv11n model and messed arround with my new raspberry pi 5. I also helped a friend of mine to create a multiplayer videogame in Unity with the help of a Tp-link router, while also learning the protocols and the communications behind.",
-    "start_date": "21-02-2024 9:00PM",
-    "end_date": "22-02-2024 6:00AM",
+    "start_date": "21-02-2025 9:00PM",
+    "end_date": "22-02-2025 6:00AM",
     "main_url": "https://hacknights.dev",
     "photo_url": "./static/img/hacknights.png",
     "geometry": {
