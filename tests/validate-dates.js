@@ -85,7 +85,7 @@ function validateJsonFile(filePath) {
         }
         
         // Check chronological order (events should be in ascending order by start_date)
-        if (previousDate && currentDate < previousDate) {
+        if (previousDate && currentDate < previousDate) { // check all are new >= old, else error
           const lineNumber = eventLineNumbers[i];
           console.log(`❌ ${filePath}:${lineNumber} Date out of order at index ${i}`);
           console.log(`   Previous: ${events[i-1].start_date} (${previousDate.toDateString()})`);
