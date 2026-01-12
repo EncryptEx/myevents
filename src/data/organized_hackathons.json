@@ -170,8 +170,8 @@
   {
     "name": "[crea] #2",
     "description": "Continuing the series, I organized a live co-working session for side-project ideas, focusing on creativity and collaboration. The only rule was to create, tinker or continue your side project (non-work/school related).",
-    "start_date": "2025-05-02 6:00 PM",
-    "end_date": "2025-05-04 4:30 PM",
+    "start_date": "2025-10-10 4:00 PM",
+    "end_date": "2025-10-10 11:59 PM",
     "main_url": "https://lu.ma/crea",
     "photo_url": "./static/img/crea.png",
     "type": "Meetup",
