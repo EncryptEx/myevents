@@ -230,6 +230,18 @@ function typeToColor($type){
             }
           });
       }
+
+      function flyToLocation(lat, lng) {
+        map.flyTo({
+          center: [lng, lat],
+          zoom: 15,
+          essential: true
+        });
+        document.getElementById('map').scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+
       generateMarkers("./data/attended_hackathons.json?");
       generateMarkers("./data/attended_congresses.json");
       generateMarkers("./data/organized_hackathons.json");
@@ -243,12 +255,19 @@ function typeToColor($type){
           $organized = retrieve("./data/organized_hackathons.json", TRUE);
           $iteratorCounter = 0;
           foreach ($organized as $hackathon):
-
+            $geoAttr = "";
+            $pointCursor = "";
+            if (isset($hackathon['geometry'])) {
+              $lat = (float)$hackathon['geometry']['coordinates']['lat'];
+              $lng = (float)$hackathon['geometry']['coordinates']['lng'];
+              $geoAttr = "onclick=\"flyToLocation($lat, $lng)\"";
+              $pointCursor = "cursor: pointer;";
+            }
           ?>
             <div class="col-12 col-lg-6">
               <div class="row">
                 <div class='col-md-11 col-12 mt-3' id='organized_hackathons_<?php echo $iteratorCounter; ?>'>
-                  <div class="row mb-4 border rounded shadow p-3">
+                  <div class="row mb-4 border rounded shadow p-3" style="<?php echo $pointCursor; ?>" <?php echo $geoAttr; ?>>
                     <div class="col-4">
                       <img src="<?php echo (htmlentities($hackathon['photo_url'])); ?>" class="portait rounded">
                     </div>
@@ -321,7 +340,14 @@ function typeToColor($type){
           $iteratorCounter = 0;
           $organized = retrieve("./data/attended_hackathons.json", TRUE);
           foreach ($organized as $hackathon):
-
+            $geoAttr = "";
+            $pointCursor = "";
+            if (isset($hackathon['geometry'])) {
+              $lat = (float)$hackathon['geometry']['coordinates']['lat'];
+              $lng = (float)$hackathon['geometry']['coordinates']['lng'];
+              $geoAttr = "onclick=\"flyToLocation($lat, $lng)\"";
+              $pointCursor = "cursor: pointer;";
+            }
           ?>
 
             <div class="col-12 col-lg-6">
@@ -333,7 +359,7 @@ function typeToColor($type){
                   <?php else: ?>
                     <div class='col-12 col-md-11 mt-3 mr' id='attended_hackathons_<?php echo $iteratorCounter; ?>'>
                       <?php endif; ?>
-                  <div class="row mb-4 border rounded shadow p-3">
+                  <div class="row mb-4 border rounded shadow p-3" style="<?php echo $pointCursor; ?>" <?php echo $geoAttr; ?>>
                     <div class="col-4">
                       <img src="<?php echo (htmlentities($hackathon['photo_url'])); ?>" class="portait rounded">
                     </div>
@@ -407,11 +433,19 @@ function typeToColor($type){
           $organized = retrieve("./data/mentored_hackathons.json", TRUE);
           $iteratorCounter = 0;
           foreach ($organized as $mentored):
+            $geoAttr = "";
+            $pointCursor = "";
+            if (isset($hackathon['geometry'])) {
+              $lat = (float)$hackathon['geometry']['coordinates']['lat'];
+              $lng = (float)$hackathon['geometry']['coordinates']['lng'];
+              $geoAttr = "onclick=\"flyToLocation($lat, $lng)\"";
+              $pointCursor = "cursor: pointer;";
+            }
           ?>
             <div class="col-12 col-lg-6">
               <div class="row">
                 <div class='col-12 col-md-11 mt-3 mr' id='attended_competitions_<?php echo $iteratorCounter; ?>'>
-                  <div class="row mb-4 border rounded shadow p-3">
+                  <div class="row mb-4 border rounded shadow p-3" style="<?php echo $pointCursor; ?>" <?php echo $geoAttr; ?>>
                     <div class="col-4">
                       <img src="<?php echo (htmlentities($mentored['photo_url'])); ?>" class="portait rounded">
                     </div>
@@ -477,11 +511,19 @@ function typeToColor($type){
           $organized = retrieve("./data/attended_competitions.json", TRUE);
           $iteratorCounter = 0;
           foreach ($organized as $mentored):
+            $geoAttr = "";
+            $pointCursor = "";
+            if (isset($hackathon['geometry'])) {
+              $lat = (float)$hackathon['geometry']['coordinates']['lat'];
+              $lng = (float)$hackathon['geometry']['coordinates']['lng'];
+              $geoAttr = "onclick=\"flyToLocation($lat, $lng)\"";
+              $pointCursor = "cursor: pointer;";
+            }
           ?>
             <div class="col-12 col-lg-6">
               <div class="row">
                 <div class='col-12 col-md-11 mt-3 mr' id='attended_competitions_<?php echo $iteratorCounter; ?>'>
-                  <div class="row mb-4 border rounded shadow p-3">
+                  <div class="row mb-4 border rounded shadow p-3" style="<?php echo $pointCursor; ?>" <?php echo $geoAttr; ?>>
                     <div class="col-4">
                       <img src="<?php echo (htmlentities($mentored['photo_url'])); ?>" class="portait rounded">
                     </div>
@@ -548,11 +590,19 @@ function typeToColor($type){
           $organized = retrieve("./data/attended_congresses.json", TRUE);
           $iteratorCounter = 0;
           foreach ($organized as $congress):
+            $geoAttr = "";
+            $pointCursor = "";
+            if (isset($congress['geometry'])) {
+              $lat = (float)$congress['geometry']['coordinates']['lat'];
+              $lng = (float)$congress['geometry']['coordinates']['lng'];
+              $geoAttr = "onclick=\"flyToLocation($lat, $lng)\"";
+              $pointCursor = "cursor: pointer;";
+            }
           ?>
             <div class="col-12 col-lg-6">
               <div class="row">
                 <div class='col-12 col-md-11 mt-3 mr' id='attended_congresses_<?php echo $iteratorCounter; ?>'>
-                  <div class="row mb-4 border rounded shadow p-3">
+                  <div class="row mb-4 border rounded shadow p-3" style="<?php echo $pointCursor; ?>" <?php echo $geoAttr; ?>>
                     <div class="col-4">
                       <img src="<?php echo (htmlentities($congress['photo_url'])); ?>" class="portait rounded">
                     </div>
