@@ -418,5 +418,20 @@
         "lng": -5.937500663083898
       }
     }
+  },
+  {
+    "name": "Integrated Systems Europe 2026",
+    "description": "The world’s leading AV and systems integration exhibition",
+    "start_date": "03-02-2026 10:00AM",
+    "end_date": "06-02-2026 4:00PM",
+    "main_url": "https://www.iseurope.org/",
+    "photo_url": "./static/img/ise23.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.353545766292584,
+        "lng": 2.1322056019512003
+      }
+    }
   }
 ]
