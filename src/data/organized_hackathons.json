@@ -18,7 +18,7 @@
   },
   {
     "name": "HackUPC 2022",
-    "description": "Hybrid Student Hackathon. 36h. April 29th-1st May.",
+    "description": "Hybrid Student Hackathon. 36h. April 29th-1st May. As an organizer, I was responsible for managing the IT infrastructure, servers, and the CTF (Capture The Flag) challenges, ensuring a smooth and engaging experience for all participants. It was a rewarding experience to see the hackers enjoy the event and successfully solve the challenges we prepared.",
     "start_date": "29-04-2022 6:00 PM",
     "end_date": "01-05-2022 5:00 PM",
     "main_url": "https://2022.hackupc.com",
@@ -229,6 +229,38 @@
       "coordinates": {
         "lat": 41.3888530221366,
         "lng": 2.112507931278272
+      }
+    }
+  }, 
+  {
+    "name": "[crea] #5",
+    "description": "The fifth edition of [crea] - a collaborative co-working session where participants work on personal side projects. An evening dedicated to creativity, experimentation, and building something you're passionate about outside of work or studies.",
+    "start_date": "19-01-2026 4:00 PM",
+    "end_date": "19-01-2026 11:59 PM",
+    "main_url": "https://lu.ma/crea",
+    "photo_url": "./static/img/crea2.png",
+    "type": "Meetup",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.3888530221366,
+        "lng": 2.112507931278272
+      }
+    }
+  },
+  {
+    "name": "Global Game Jam Barcelona 2026",
+    "description": "Global Game Jam is the world's largest game creation event, where participants gather to create games in a 24-hour period. As a GitHub Campus Expert, I helped organize event and ran a workshop on version control and collaboration tailored for game developers.",
+    "start_date": "30-01-2026 5:00 PM",
+    "end_date": "01-02-2026 9:00 PM",
+    "main_url": "https://gamejambcn.com/",
+    "photo_url": "./static/img/bgj26.png",
+    "type": "Game Jam",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.3890147177149, 
+        "lng": 2.1132690053280396
       }
     }
   }

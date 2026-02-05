@@ -318,7 +318,7 @@
     "main_url": "https://gamejambcn.com/",
     "devpost_url": "https://globalgamejam.org/games/2025/bubbletea-7",
     "extr" : "https://github.com/EncryptEx/machine-control-monitoring/",
-    "photo_url": "./static/img/gjb.png",
+    "photo_url": "./static/img/gjb25.png",
     "geometry": {
       "type": "Point",
       "coordinates": {
@@ -370,8 +370,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": {
-        "lat": 51.5072,
-        "lng": -0.1276
+        "lat": 51.498814719243555,
+        "lng": -0.17919858718947865
       }
     }
   },
@@ -389,6 +389,24 @@
       "coordinates": {
         "lat": 43.47322837607073,
         "lng": -80.53999678531565
+      }
+    }
+  },
+  {
+    "name": "ICHack 2026",
+    "description": "We developed a software+hardware solution to monitor and control your sleep quality and cycles. The hardware part consists of a custom-built alarm clock with a Raspberry Pi, and a O-LED display, while the software part is a web application that collects data from the sensors and provides insights and recommendations to improve sleep quality",
+    "start_date": "31-02-2026 8:00AM",
+    "winner_text": "2º PLACE",
+    "end_date": "01-03-2026 6:00PM",
+    "main_url": "https://ichack.org",
+    "devpost_url": "https://devpost.com/software/dormant",
+    "project_url" : "https://github.com/encryptEx/ichack26",
+    "photo_url": "./static/img/ichackuk.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 51.49883278462519,
+        "lng": -0.17519514930275346
       }
     }
   }
