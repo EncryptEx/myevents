@@ -395,9 +395,9 @@
   {
     "name": "ICHack 2026",
     "description": "We developed a software+hardware solution to monitor and control your sleep quality and cycles. The hardware part consists of a custom-built alarm clock with a Raspberry Pi, and a O-LED display, while the software part is a web application that collects data from the sensors and provides insights and recommendations to improve sleep quality",
-    "start_date": "31-02-2026 8:00AM",
+    "start_date": "01-03-2026 8:00AM",
     "winner_text": "2º PLACE",
-    "end_date": "01-03-2026 6:00PM",
+    "end_date": "31-02-2026 6:00PM",
     "main_url": "https://ichack.org",
     "devpost_url": "https://devpost.com/software/dormant",
     "project_url" : "https://github.com/encryptEx/ichack26",
