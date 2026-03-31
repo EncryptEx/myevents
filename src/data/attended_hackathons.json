@@ -409,5 +409,20 @@
         "lng": -0.17519514930275346
       }
     }
+  },
+  {
+    "name": "Hacknights 2026 Episode I",
+    "description": "I built the espaicrea.cat website, and I also created the legal page that is modular and reusable for other projects.",
+    "start_date": "27-02-2026 9:00PM",
+    "end_date": "28-02-2026 5:00AM",
+    "main_url": "https://hacknights.dev",
+    "photo_url": "./static/img/hacknights.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.38853585618749,
+        "lng": 2.1126436429384183
+      }
+    }
   }
 ]

@@ -433,5 +433,35 @@
         "lng": 2.1322056019512003
       }
     }
+  },
+  {
+    "name": "Mobile World Congress 2026",
+    "description": "World's most influential Event For The Connectivity Industry.",
+    "start_date": "02-03-2026 10:00AM",
+    "end_date": "05-03-2026 4:00PM",
+    "main_url": "https://www.mwcbarcelona.com/",
+    "photo_url": "./static/img/mwc.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.354277283901105,
+        "lng": 2.128442801940831
+      }
+    }
+  },
+  {
+    "name": "4 Years From Now 2026",
+    "description": "The startup business platform that enables startups, investors and companies to connect and launch new business ventures together.",
+    "start_date": "02-03-2026 10:00AM",
+    "end_date": "05-03-2026 4:00PM",
+    "main_url": "https://www.4yfn.com/",
+    "photo_url": "./static/img/4yfn.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.35581903318689,
+        "lng": 2.136694868608629
+      }
+    }
   }
 ]
