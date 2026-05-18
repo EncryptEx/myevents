@@ -424,5 +424,21 @@
         "lng": 2.1126436429384183
       }
     }
+  },
+  {
+    "name": "VilaHack 2026",
+    "description": "We won a CTF with 20 puzzles about web security, reverse engineering, cryptography and forensics in a 24h competition. It was a blast and we learnt a lot about security and how to exploit vulnerabilities.",
+    "start_date": "16-05-2026 8:00AM",
+    "end_date": "17-05-2026 5:00PM",
+    "main_url": "https://vilahack.com",
+    "winner_text": "1º PLACE",
+    "photo_url": "./static/img/vilahack.png",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.22156369311983, 
+        "lng": 1.730043775299541
+      }
+    }
   }
 ]

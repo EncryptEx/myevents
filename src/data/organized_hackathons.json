@@ -295,5 +295,37 @@
         "lng": 2.112507931278272
       }
     }
+  },
+  {
+    "name": "[crea] #8",
+    "description": "The eighth edition of [crea] - a collaborative co-working session where participants work on personal side projects. An evening dedicated to creativity, experimentation, and building something you're passionate about outside of work or studies.",
+    "start_date": "17-04-2026 4:00 PM",
+    "end_date": "17-04-2026 11:59 PM",
+    "main_url": "https://lu.ma/crea",
+    "photo_url": "./static/img/crea2.png",
+    "type": "Meetup",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.3888530221366,
+        "lng": 2.112507931278272
+      }
+    }
+  },
+  {
+    "name": "[crea] #9",
+    "description": "The ninth edition of [crea] - a collaborative co-working session where participants work on personal side projects. An evening dedicated to creativity, experimentation, and building something you're passionate about outside of work or studies.",
+    "start_date": "15-05-2026 4:00 PM",
+    "end_date": "15-05-2026 11:59 PM",
+    "main_url": "https://lu.ma/crea",
+    "photo_url": "./static/img/crea2.png",
+    "type": "Meetup",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.3888530221366,
+        "lng": 2.112507931278272
+      }
+    }
   }
 ]
