@@ -248,88 +248,6 @@ function typeToColor($type){
       generateMarkers("./data/attended_competitions.json");
     </script>
     <div class="row">
-      <div class="col-12">
-        <h4>Events Organized</h4>
-        <div class="row">
-          <?php
-          $organized = retrieve("./data/organized_hackathons.json", TRUE);
-          $iteratorCounter = 0;
-          foreach ($organized as $hackathon):
-            $geoAttr = "";
-            $pointCursor = "";
-            if (isset($hackathon['geometry'])) {
-              $lat = (float)$hackathon['geometry']['coordinates']['lat'];
-              $lng = (float)$hackathon['geometry']['coordinates']['lng'];
-              $geoAttr = "onclick=\"flyToLocation($lat, $lng)\"";
-              $pointCursor = "cursor: pointer;";
-            }
-          ?>
-            <div class="col-12 col-lg-6">
-              <div class="row">
-                <div class='col-md-11 col-12 mt-3' id='organized_hackathons_<?php echo $iteratorCounter; ?>'>
-                  <div class="row mb-4 border rounded shadow p-3" style="<?php echo $pointCursor; ?>" <?php echo $geoAttr; ?>>
-                    <div class="col-4">
-                      <img src="<?php echo (htmlentities($hackathon['photo_url'])); ?>" class="portait rounded">
-                    </div>
-                    <div class="col-8">
-                      <div class="row">
-                        <div class="col-12">
-                          <h6 style='font-size: 120%; font-weight:bold;'>
-                            <?php echo htmlentities($hackathon['name']); ?>
-                            
-                            <div style="float:right;">
-                              <?php if (isset($hackathon['main_url']) && $hackathon['main_url'] != ""): ?>
-
-                                <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['main_url']); ?>'>
-                                  <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
-                                </a>
-                              <?php endif;
-                              if (isset($hackathon['devpost_url']) && $hackathon['devpost_url'] != ""): ?>
-                                <a class="text-decoration-none"
-                                  href='<?php echo htmlentities($hackathon['devpost_url']); ?>'>
-                                  <img class="icon" src="./static/img/devpost.png" alt="devpost logo">
-                                </a>
-                              <?php endif; ?>
-                            </div>
-                          </h6>
-                        </div>
-                        <div class="col-12">
-                          <p class='text-muted card-text text-justify'>
-                            <?php echo htmlentities($hackathon['description']); ?>
-                          </p>
-                          <span class='text-muted card-text text-justify'>
-                            <?php
-                            $d = $hackathon['start_date'];
-                            $e = $hackathon['end_date'];
-                            $sd = date_parse($d);
-                            $ed = date_parse($e);
-
-                            if ($sd['month'] == $ed['month']) {
-                              $parsedMonth = monthToString($ed['month']);
-                            } else {
-                              $parsedMonth = monthToString($sd['month']) . "-" . monthToString($ed['month']);
-                            }
-                            echo (htmlentities($parsedMonth . " " . $ed['year'])); ?>
-                          </span>
-                          <?php if (isset($hackathon['type'])): ?>
-                            <span style='float:right;' class="badge <?php echo typeToColor(htmlentities($hackathon['type'])); ?> rounded-pill"><?php echo htmlentities($hackathon['type']); ?></span>
-                          <?php endif; ?>
-                          <!-- TODO: do a bs5 tooltip to show date -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div>
-              </div>
-            </div>
-          <?php
-            $iteratorCounter++;
-          endforeach;
-          ?>
-        </div>
-      </div>
 
 
 
@@ -424,6 +342,89 @@ function typeToColor($type){
           ?>
         </div>
 
+      </div>
+
+      <div class="col-12">
+        <h4>Events Organized</h4>
+        <div class="row">
+          <?php
+          $organized = retrieve("./data/organized_hackathons.json", TRUE);
+          $iteratorCounter = 0;
+          foreach ($organized as $hackathon):
+            $geoAttr = "";
+            $pointCursor = "";
+            if (isset($hackathon['geometry'])) {
+              $lat = (float)$hackathon['geometry']['coordinates']['lat'];
+              $lng = (float)$hackathon['geometry']['coordinates']['lng'];
+              $geoAttr = "onclick=\"flyToLocation($lat, $lng)\"";
+              $pointCursor = "cursor: pointer;";
+            }
+          ?>
+            <div class="col-12 col-lg-6">
+              <div class="row">
+                <div class='col-md-11 col-12 mt-3' id='organized_hackathons_<?php echo $iteratorCounter; ?>'>
+                  <div class="row mb-4 border rounded shadow p-3" style="<?php echo $pointCursor; ?>" <?php echo $geoAttr; ?>>
+                    <div class="col-4">
+                      <img src="<?php echo (htmlentities($hackathon['photo_url'])); ?>" class="portait rounded">
+                    </div>
+                    <div class="col-8">
+                      <div class="row">
+                        <div class="col-12">
+                          <h6 style='font-size: 120%; font-weight:bold;'>
+                            <?php echo htmlentities($hackathon['name']); ?>
+                            
+                            <div style="float:right;">
+                              <?php if (isset($hackathon['main_url']) && $hackathon['main_url'] != ""): ?>
+
+                                <a class="text-decoration-none" href='<?php echo htmlentities($hackathon['main_url']); ?>'>
+                                  <img class="icon" src="./static/img/earth-americas-solid.svg" alt="earth logo">
+                                </a>
+                              <?php endif;
+                              if (isset($hackathon['devpost_url']) && $hackathon['devpost_url'] != ""): ?>
+                                <a class="text-decoration-none"
+                                  href='<?php echo htmlentities($hackathon['devpost_url']); ?>'>
+                                  <img class="icon" src="./static/img/devpost.png" alt="devpost logo">
+                                </a>
+                              <?php endif; ?>
+                            </div>
+                          </h6>
+                        </div>
+                        <div class="col-12">
+                          <p class='text-muted card-text text-justify'>
+                            <?php echo htmlentities($hackathon['description']); ?>
+                          </p>
+                          <span class='text-muted card-text text-justify'>
+                            <?php
+                            $d = $hackathon['start_date'];
+                            $e = $hackathon['end_date'];
+                            $sd = date_parse($d);
+                            $ed = date_parse($e);
+
+                            if ($sd['month'] == $ed['month']) {
+                              $parsedMonth = monthToString($ed['month']);
+                            } else {
+                              $parsedMonth = monthToString($sd['month']) . "-" . monthToString($ed['month']);
+                            }
+                            echo (htmlentities($parsedMonth . " " . $ed['year'])); ?>
+                          </span>
+                          <?php if (isset($hackathon['type'])): ?>
+                            <span style='float:right;' class="badge <?php echo typeToColor(htmlentities($hackathon['type'])); ?> rounded-pill"><?php echo htmlentities($hackathon['type']); ?></span>
+                          <?php endif; ?>
+                          <!-- TODO: do a bs5 tooltip to show date -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          <?php
+            $iteratorCounter++;
+          endforeach;
+          ?>
+        </div>
       </div>
 
       <div class="col-12">
