@@ -25,10 +25,17 @@ export interface EventRecord {
   geometry?: EventGeometry;
 }
 
+export type EventSectionKind =
+  | "attended"
+  | "organized"
+  | "mentored"
+  | "competitions"
+  | "congresses";
+
 export interface EventSectionData {
   key: string;
+  kind: EventSectionKind;
   title: string;
-  description: string;
   events: EventRecord[];
 }
 
@@ -60,7 +67,7 @@ export function formatEventPeriod(event: EventRecord) {
   const month =
     start.month === end.month
       ? MONTHS[end.month - 1]
-      : `${MONTHS[start.month - 1]}–${MONTHS[end.month - 1]}`;
+      : `${MONTHS[start.month - 1]}-${MONTHS[end.month - 1]}`;
 
   return `${month} ${end.year}`;
 }

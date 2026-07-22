@@ -1,137 +1,147 @@
-import Image from "next/image";
-import type { MouseEvent } from "react";
+/* eslint-disable @next/next/no-img-element */
+
+import { Fragment } from "react";
+
 import {
-  eventId,
   formatEventPeriod,
   normalizeAssetPath,
   type EventRecord,
+  type EventSectionKind,
 } from "@/lib/events";
 
 interface EventCardProps {
   event: EventRecord;
   index: number;
-  sectionKey: string;
+  kind: EventSectionKind;
   onLocate: (event: EventRecord) => void;
 }
 
 interface EventLink {
   href: string;
   icon: string;
-  label: string;
+  alt: string;
 }
 
-function linksFor(event: EventRecord): EventLink[] {
-  return [
-    event.main_url && {
-      href: event.main_url,
-      icon: "/static/img/earth-americas-solid.svg",
-      label: `${event.name} website`,
-    },
-    event.devpost_url && {
-      href: event.devpost_url,
-      icon: "/static/img/devpost.png",
-      label: `${event.name} on Devpost`,
-    },
-    (event.project_url || event.extr) && {
-      href: event.project_url || event.extr || "",
-      icon: "/static/img/github.svg",
-      label: `${event.name} project`,
-    },
-    event.extra_url && {
+function linksFor(event: EventRecord, kind: EventSectionKind): EventLink[] {
+  const links: Array<EventLink | null> = [
+    event.main_url
+      ? {
+          href: event.main_url,
+          icon: "/static/img/earth-americas-solid.svg",
+          alt: "earth logo",
+        }
+      : null,
+  ];
+
+  if ((kind === "attended" || kind === "organized") && event.devpost_url) {
+    links.push({ href: event.devpost_url, icon: "/static/img/devpost.png", alt: "devpost logo" });
+  }
+
+  if (kind === "attended" && event.project_url) {
+    links.push({ href: event.project_url, icon: "/static/img/github.svg", alt: "github logo" });
+  }
+
+  if ((kind === "mentored" || kind === "competitions") && event.extra_url) {
+    links.push({
       href: event.extra_url,
       icon: "/static/img/earth-americas-solid.svg",
-      label: `More information about ${event.name}`,
-    },
-    event.extra_url2 && {
-      href: event.extra_url2,
-      icon: "/static/img/earth-americas-solid.svg",
-      label: `Additional information about ${event.name}`,
-    },
-  ].filter((link): link is EventLink => Boolean(link));
+      alt: "earth logo",
+    });
+  }
+
+  return links.filter((link): link is EventLink => link !== null);
 }
 
-export function EventCard({ event, index, sectionKey, onLocate }: EventCardProps) {
-  const canLocate = Boolean(event.geometry);
-  const id = eventId(sectionKey, event, index);
-  const typeClass = event.type
-    ?.toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
+function typeColor(type: string) {
+  return (
+    {
+      Hackathon: "bg-primary",
+      Unconference: "bg-success",
+      Meetup: "bg-info",
+    }[type] || "bg-black"
+  );
+}
 
-  function handleClick() {
-    if (canLocate) onLocate(event);
-  }
+function wrapperClass(kind: EventSectionKind) {
+  return kind === "organized" ? "col-md-11 col-12 mt-3" : "col-12 col-md-11 mt-3 mr";
+}
 
-  function stopCardClick(mouseEvent: MouseEvent<HTMLAnchorElement>) {
-    mouseEvent.stopPropagation();
-  }
+function idPrefix(kind: EventSectionKind) {
+  if (kind === "attended") return "attended_hackathons";
+  if (kind === "organized") return "organized_hackathons";
+  if (kind === "congresses") return "attended_congresses";
+  return "attended_competitions";
+}
+
+export function EventCard({ event, index, kind, onLocate }: EventCardProps) {
+  const locatable = Boolean(event.geometry);
 
   return (
-    <article
-      className={`event-card${canLocate ? " event-card--locatable" : ""}`}
-      id={id}
-      onClick={handleClick}
-      onKeyDown={(keyboardEvent) => {
-        if (canLocate && (keyboardEvent.key === "Enter" || keyboardEvent.key === " ")) {
-          keyboardEvent.preventDefault();
-          onLocate(event);
-        }
-      }}
-      role={canLocate ? "button" : undefined}
-      tabIndex={canLocate ? 0 : undefined}
-      title={canLocate ? `Show ${event.name} on the map` : undefined}
-    >
-      {event.winner_text ? (
-        <span className="winner-ribbon">{event.winner_text}</span>
-      ) : null}
+    <div className="col-12 col-lg-6">
+      <div className="row">
+        <div
+          className={`${wrapperClass(kind)}${event.winner_text ? " relativebox" : ""}`}
+          id={`${idPrefix(kind)}_${index}`}
+        >
+          {event.winner_text ? (
+            <div className="ribbon ribbon-top-left">
+              <span>{event.winner_text}</span>
+            </div>
+          ) : null}
 
-      <div className="event-card__image">
-        <Image
-          alt={`${event.name} logo`}
-          fill
-          onError={(imageEvent) => {
-            imageEvent.currentTarget.srcset = "";
-            imageEvent.currentTarget.src = "/static/img/hackupc.svg";
-          }}
-          sizes="(max-width: 720px) 34vw, (max-width: 1100px) 24vw, 190px"
-          src={normalizeAssetPath(event.photo_url)}
-        />
-      </div>
+          <div
+            className="row mb-4 border rounded shadow p-3"
+            onClick={locatable ? () => onLocate(event) : undefined}
+            style={locatable ? { cursor: "pointer" } : undefined}
+          >
+            <div className="col-4">
+              <img alt="" src={normalizeAssetPath(event.photo_url)} className="portait rounded" />
+            </div>
 
-      <div className="event-card__content">
-        <div className="event-card__heading">
-          <h3>{event.name}</h3>
-          <div className="event-links">
-            {linksFor(event).map((link, linkIndex) => (
-              <a
-                aria-label={link.label}
-                href={link.href}
-                key={`${link.href}-${linkIndex}`}
-                onClick={stopCardClick}
-                rel="noreferrer"
-                target="_blank"
-                title={link.label}
-              >
-                <Image alt="" height={19} src={link.icon} width={19} />
-              </a>
-            ))}
+            <div className="col-8">
+              <div className="row">
+                <div className="col-12">
+                  <h6 style={{ fontSize: "120%", fontWeight: "bold" }}>
+                    {event.name}
+                    <div style={{ float: "right" }}>
+                      {linksFor(event, kind).map((link, linkIndex) => (
+                        <Fragment key={`${link.href}-${linkIndex}`}>
+                          {linkIndex > 0 ? " " : null}
+                          <a className="text-decoration-none" href={link.href}>
+                            <img className="icon" src={link.icon} alt={link.alt} />
+                          </a>
+                        </Fragment>
+                      ))}
+                    </div>
+                  </h6>
+                </div>
+
+                <div className="col-12">
+                  <p className="text-muted card-text text-justify">{event.description}</p>
+
+                  {kind === "organized" ? (
+                    <>
+                      <span className="text-muted card-text text-justify">
+                        {formatEventPeriod(event)}
+                      </span>
+                      {event.type ? (
+                        <span
+                          className={`badge ${typeColor(event.type)} rounded-pill`}
+                          style={{ float: "right" }}
+                        >
+                          {event.type}
+                        </span>
+                      ) : null}
+                    </>
+                  ) : (
+                    <p className="text-muted card-text text-justify">{formatEventPeriod(event)}</p>
+                  )}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <p className="event-card__description">{event.description}</p>
-
-        <div className="event-card__meta">
-          <time dateTime={event.start_date} title={`${event.start_date} – ${event.end_date}`}>
-            {formatEventPeriod(event)}
-          </time>
-          {event.type ? (
-            <span className={`event-type event-type--${typeClass}`}>
-              {event.type}
-            </span>
-          ) : null}
-          {canLocate ? <span className="map-hint">View on map</span> : null}
-        </div>
       </div>
-    </article>
+    </div>
   );
 }

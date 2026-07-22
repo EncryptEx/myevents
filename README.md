@@ -54,7 +54,7 @@ form `./static/img/example.png`.
 
 Run `npm test` before committing. The test suite checks date ordering, required
 fields, coordinates, and warns about referenced image files that have not been
-added yet. Missing artwork falls back to the generic HackUPC mark in the UI.
+added yet.
 
 ## Docker
 

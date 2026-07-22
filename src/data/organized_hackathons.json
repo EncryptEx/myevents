@@ -318,7 +318,7 @@
     "start_date": "24-04-2026 4:00 PM",
     "end_date": "26-04-2026 11:59 PM",
     "main_url": "https://hackupc.com/",
-    "photo_url": "./static/img/hackupc2026.png",
+    "photo_url": "./static/img/hackupc26.png",
     "type": "Hackathon",
     "geometry": {
       "type": "Point",
