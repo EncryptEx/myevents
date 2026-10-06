@@ -361,12 +361,44 @@
       }
     }
   },
-   {
+  {
     "name": "[crea] #11 - extended",
     "description": "The eleventh edition was special, this time we were the entire weekend hacking.",
     "start_date": "03-07-2026 4:00 PM",
     "end_date": "05-07-2026 4:59 PM",
     "main_url": "https://lu.ma/crea",
+    "photo_url": "./static/img/crea2.png",
+    "type": "Meetup",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.3888530221366,
+        "lng": 2.112507931278272
+      }
+    }
+  },
+  {
+    "name": "Linux Install Party 2026",
+    "description": "Helped organize LinuxUPC's hands-on install party, welcoming newcomers to Linux, troubleshooting their setups, and helping them take their first confident steps into the open-source world.",
+    "start_date": "14-10-2026 4:00 PM",
+    "end_date": "14-10-2026 9:00 PM",
+    "main_url": "https://linuxupc.org/",
+    "photo_url": "./static/img/linux-install-party.png",
+    "type": "Meetup",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 41.3888530221366,
+        "lng": 2.112507931278272
+      }
+    }
+  },
+  {
+    "name": "[crea] #12",
+    "description": "The twelfth edition of [crea]: another evening for makers to turn side-project ideas into something real, share momentum with the community, and keep building beyond work and university.",
+    "start_date": "16-10-2026 4:00 PM",
+    "end_date": "16-10-2026 11:59 PM",
+    "main_url": "https://luma.com/crea?period=past&e=evt-JMluFHlYP5L1Ykd",
     "photo_url": "./static/img/crea2.png",
     "type": "Meetup",
     "geometry": {

@@ -29,7 +29,7 @@ const sections: EventSectionData[] = [
   {
     key: "hackathons-mentored",
     kind: "mentored",
-    title: "Mentored Hackathons",
+    title: "Mentored Hackathons & Talks",
     events: newestFirst(mentoredHackathons),
   },
   {

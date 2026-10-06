@@ -14,5 +14,14 @@
             "lng": 2.174502691650234
           }
         }
+      },
+      {
+        "name": "Respira Hackathon 2026",
+        "description": "Took the stage at CIBERES' first international respiratory-health hackathon to deliver a practical Git & GitHub 101 workshop, then showed teams how to turn their work into a standout Devpost submission. From first commit to final pitch, I helped researchers and builders ship with confidence during the 48-hour sprint.",
+        "start_date": "01-10-2026 5:00 PM",
+        "end_date": "03-10-2026 12:00 PM",
+        "main_url": "https://respira-hackathon.com/",
+        "extra_url": "https://respira-hackathon.devpost.com/",
+        "photo_url": "./static/img/respira-hackathon.jpg"
       }
 ]

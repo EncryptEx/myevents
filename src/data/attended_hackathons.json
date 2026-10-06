@@ -440,5 +440,36 @@
         "lng": 1.730043775299541
       }
     }
+  },
+  {
+    "name": "Google DeepMind Agentic AI Hack",
+    "description": "Selected as one of 70 builders for a one-day agentic AI sprint in Stockholm, co-hosted by {Tech: Europe} and Google DeepMind. We formed teams in the morning, built with frontier AI tools all day, and shipped a live demo by sundown.",
+    "start_date": "03-10-2026 9:30 AM",
+    "end_date": "03-10-2026 9:30 PM",
+    "main_url": "https://luma.com/sth-hack?tk=FEc5cE",
+    "photo_url": "./static/img/agentic-ai-hack.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 59.34289483711789,
+        "lng": 18.065177185242447
+      }
+    }
+  },
+  {
+    "name": "Entrepreneurial Hackathon in a Nuclear Reactor",
+    "description": "Built an entrepreneurial AI prototype 25 metres underground in KTH's former nuclear reactor hall. After an intense five-hour sprint, our team took 3rd place and earned approximately $500 in sponsor credits per person.",
+    "winner_text": "3RD PLACE",
+    "start_date": "05-10-2026 4:00 PM",
+    "end_date": "05-10-2026 9:00 PM",
+    "main_url": "https://luma.com/yi1qeffe?tk=DFgHAX",
+    "photo_url": "./static/img/nuclear-reactor-hackathon.jpg",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 59.3501645,
+        "lng": 18.0681202
+      }
+    }
   }
 ]
